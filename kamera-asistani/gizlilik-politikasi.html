@@ -1,0 +1,274 @@
+<!doctype html>
+<!--
+  Camera Assistant — Gizlilik Politikası / Privacy Policy
+  ======================================================
+  SADE SÜRÜM (2.0, 15 Ağustos 2026). Tek geliştiricinin avukata gitmeden
+  yayınlayabilmesi için yazıldı. Kimlik alanları DOLDURULDU (16 Ağustos 2026): veri sorumlusu
+    Ersal Sarıkaya, iletişim esarikaya@aursal.com.
+    ⚠️ E-posta aursal.com alan adına bağlı; alan adı ve posta kutusu
+    ÇALIŞIR durumda olmadan bu belge yayınlanmamalı — KVKK m.11
+    başvuru hakkı, ulaşılamayan bir adresle karşılanmış olmaz.
+  Başka yer tutucu yoktur (önceki sürümde 22 tane vardı).
+  Neyin neden çıkarıldığı: docs/HANDOFF.md §24.6.
+
+  Uygulama içindeki metin (strings.xml legal_privacy_*) bu sayfayla AYNI bölümleri
+  taşır; biri değişirse diğeri de değişmeli.
+-->
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kamera Asistanı — Gizlilik Politikası</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#555; --bg:#fff; --card:#f6f7f9; --accent:#0f6e8c; --border:#e2e5e9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e6e6e6; --muted:#a0a4ab; --bg:#0f1319; --card:#161b22; --accent:#5cc9f0; --border:#2a2f37; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         color:var(--fg); background:var(--bg); line-height:1.65; }
+  .wrap { max-width:820px; margin:0 auto; padding:2rem 1.25rem 5rem; }
+  h1 { font-size:1.9rem; margin:.3rem 0; }
+  h2 { font-size:1.25rem; margin:2.2rem 0 .6rem; padding-top:.6rem; border-top:1px solid var(--border); }
+  .meta { color:var(--muted); font-size:.9rem; margin-bottom:1rem; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:1rem 1.25rem; }
+  .muted { color:var(--muted); font-size:.92rem; }
+  table { width:100%; border-collapse:collapse; margin:.8rem 0; font-size:.94rem; }
+  th, td { text-align:left; padding:.5rem .6rem; border:1px solid var(--border); vertical-align:top; }
+  th { background:var(--card); }
+  a { color:var(--accent); }
+
+    /* aursal.com palette, applied over the tokens above (scripts/build_web.py) */
+    :root {
+      --fg:#33403f; --muted:#7a857f; --bg:#f4f2ec;
+      --card:#fffefb; --accent:#14495a; --border:#e2dfd5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg:#e6e6e6; --muted:#a0a4ab; --bg:#14181d;
+        --card:#1b2026; --accent:#7fc4d8; --border:#2b3138;
+      }
+    }
+    h1, h2, h3 { color: var(--fg); letter-spacing:-.01em; }
+  </style>
+  <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="wrap">
+<p style="margin-bottom:1.5rem"><a href="https://aursal.com/">← AURSAL</a></p>
+
+<h1>Gizlilik Politikası</h1>
+<p class="meta">Camera Assistant · Son güncelleme: 15.08.2026 · Sürüm 2.0</p>
+<p><a href="#en">English version below ↓</a></p>
+
+<div class="card">
+<p><strong>Kısaca:</strong> Çektiğiniz fotoğraflar telefonunuzda kalır, sunucularımıza
+yüklenmez. Yapay zeka koçluğu açıkken kamera kareleri yalnız o an için seçtiğiniz sağlayıcıya
+gönderilir ve orada saklanmaz. Ses kaydı yapmıyoruz. Onayınızı istediğiniz an geri
+çekebilirsiniz; çektiğiniz anda yapay zeka işlemesi durur.</p>
+</div>
+
+<h2>1. Veri sorumlusu</h2>
+<p>Bu uygulamayı işleten ve verilerinizden sorumlu olan: <strong>Ersal Sarıkaya</strong>.
+İletişim: <a href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a>.</p>
+<p class="muted">Dayanak: KVKK m.10 ve Aydınlatma Yükümlülüğü Tebliği veri sorumlusunun
+kimliğinin bildirilmesini ister; GDPR m.13(1)(a) aynısını söyler.</p>
+<p class="muted"><strong>VERBİS kaydı:</strong> Kişisel Verileri Koruma Kurulu’nun 2018/32
+sayılı kararına göre, yıllık çalışan sayısı 50’den az <em>ve</em> yıllık mali bilanço toplamı
+25 milyon TL’nin altında olan, ana faaliyeti özel nitelikli veri işlemek olmayan veri
+sorumluları VERBİS’e kayıttan muaftır. Bu uygulama tek geliştirici tarafından işletildiği
+sürece muafiyet kapsamındadır; eşikler aşılırsa kayıt gerekir.</p>
+
+<h2>2. Hangi verileri işliyoruz</h2>
+<table>
+<tr><th>Veri</th><th>Neden</th></tr>
+<tr><td>E-posta, görünen ad, isteğe bağlı profil fotoğrafı</td><td>Hesabınızı oluşturmak, girişinizi sağlamak</td></tr>
+<tr><td>Cihaz kimliği, model, işletim sistemi, reklam kimliği</td><td>Güvenlik, hata ayıklama, reklam gösterimi</td></tr>
+<tr><td>Kullanım sayaçları (kaç çekim, hangi mod, kota)</td><td>Günlük hakkınızı hesaplamak, hizmeti iyileştirmek</td></tr>
+<tr><td><strong>Kamera kareleri</strong></td><td>Yapay zeka koçluğu açıkken o anki yönlendirmeyi üretmek — bkz. Bölüm 4</td></tr>
+</table>
+<p><strong>Çektiğiniz fotoğraflar telefonunuzda kalır.</strong> Bizim sunucularımıza yüklenmez.
+<strong>Ses kaydı yapmıyoruz</strong> — sesli koç yalnız konuşur, dinlemez; uygulama mikrofon
+izni istemez.</p>
+
+<h2>3. Neden işliyoruz, hangi hukuki sebeple</h2>
+<table>
+<tr><th>Amaç</th><th>Hukuki sebep (KVKK m.5 / GDPR m.6)</th></tr>
+<tr><td>Yapay zeka fotoğraf koçluğunu sunmak</td><td>Sözleşmenin ifası + <strong>açık rızanız</strong> (yapay zeka işlemesi için)</td></tr>
+<tr><td>Hesap ve kimlik doğrulama</td><td>Sözleşmenin ifası</td></tr>
+<tr><td>Abonelik, kota, kötüye kullanımın önlenmesi</td><td>Sözleşmenin ifası ve meşru menfaat</td></tr>
+<tr><td>Analitik</td><td>Açık rıza (isteğe bağlı)</td></tr>
+<tr><td>Reklam</td><td>Kişiselleştirme için açık rıza; aksi hâlde meşru menfaat</td></tr>
+</table>
+
+<h2>4. Yapay zeka ve yurt dışına aktarım</h2>
+<p>Yapay zeka koçluğunu açtığınızda kamera kareleri, seçtiğiniz sağlayıcıya gerçek zamanlı
+gönderilir: <strong>Google (Gemini)</strong>, <strong>OpenAI</strong> veya
+<strong>Anthropic</strong>. Sağlayıcılar bu kareleri saklamaz ve modellerini eğitmek için
+kullanmaz. Karelerde yüzünüz görünebilir.</p>
+<p>Sunucuları yurt dışındadır (ABD dahil). Bu nedenle aktarım <strong>KVKK m.9 uyarınca açık
+rızanıza</strong> dayanır — onay ekranındaki ayrı “Yapay Zeka İşleme” kutusu budur.
+Onaylamazsanız uygulama kamera olarak çalışmaya devam eder, yalnız yapay zeka özellikleri
+kapalı olur.</p>
+<p class="muted"><strong>Yüz tanıma yapmıyoruz.</strong> Cihazda çalışan yüz <em>tespiti</em>,
+karede yüz olup olmadığını ve açısını ölçer; kimseyi tanımlamaz, hiçbir veri tabanıyla
+eşleştirmez ve bu ölçümler saklanmaz. Bu nedenle işleme KVKK m.6 ve GDPR m.9 anlamında
+biyometrik veri işleme sayılmaz — biyometrik veri, kişiyi <em>tekil olarak tanımlamak</em>
+amacıyla yapılan işlemedir.</p>
+<p>Sağlayıcı politikaları:
+<a href="https://policies.google.com/privacy">Google</a> ·
+<a href="https://openai.com/policies/privacy-policy">OpenAI</a> ·
+<a href="https://www.anthropic.com/legal/privacy">Anthropic</a>.</p>
+
+<h2>5. Kimlerle paylaşıyoruz</h2>
+<p>Kişisel verilerinizi satmıyoruz. Yalnızca ürünü çalıştıran hizmetlerle paylaşıyoruz:
+yukarıdaki yapay zeka sağlayıcıları; kimlik doğrulama ve veritabanı için <strong>Google
+Firebase</strong>; ödeme ve abonelik için <strong>Google Play</strong>; reklam için
+<strong>Google AdMob</strong>.</p>
+
+<h2>6. Ne kadar saklıyoruz, nasıl siliyoruz</h2>
+<ul>
+<li><strong>Kamera kareleri:</strong> saklanmaz; yönlendirme üretilince atılır.</li>
+<li><strong>Çektiğiniz fotoğraflar:</strong> yalnız telefonunuzda; silmek sizin elinizde.</li>
+<li><strong>Hesap bilgileri ve onay kayıtları:</strong> hesabınız durduğu sürece.</li>
+<li><strong>Kullanım sayaçları:</strong> günlük tutulur; hesap silinince temizlenir.</li>
+</ul>
+<p>Uygulama içinden <em>Profil → Hesabımı Sil</em> ile hesabınızı silebilirsiniz; bu işlem bulut
+kayıtlarınızı ve onay geçmişinizi de siler. Telefonunuzdaki fotoğraflar sizde kalır.</p>
+
+<h2>7. Haklarınız</h2>
+<p>KVKK m.11 ve GDPR m.15-22 uyarınca verilerinize erişme, düzeltme, silme, işlemeyi sınırlama,
+taşınabilirlik ve itiraz haklarınız vardır. Açık rızaya dayanan işlemelerde rızanızı her zaman
+geri çekebilirsiniz.</p>
+<p>Çoğu uygulama içinde tek dokunuş: <em>Profil</em> ekranında verilerinizi
+<strong>indirebilir</strong> (JSON), yapay zeka onayınızı <strong>geri çekebilir</strong> veya
+hesabınızı <strong>silebilirsiniz</strong>. Yazışmak için: <a href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a>.</p>
+<p class="muted">Başvurunuz en geç 30 gün içinde yanıtlanır. Sonuçtan memnun kalmazsanız
+Kişisel Verileri Koruma Kurulu’na — AB/İngiltere’de kendi denetim makamınıza — başvurabilirsiniz.</p>
+
+<h2>8. Reklamlar</h2>
+<p>Ücretsiz sürümde Google AdMob reklamları gösterilir. AB ve İngiltere’de kişiselleştirilmiş
+reklam onayı, herhangi bir reklam isteğinden önce Google’ın UMP onay formuyla alınır; onay yoksa
+reklamlar kişiselleştirilmeden gösterilir. Ücretli planlarda reklam yoktur. Onay formunu
+<em>Ayarlar → Hakkında</em> bölümünden istediğiniz zaman yeniden açabilirsiniz.</p>
+
+<h2>9. Güvenlik</h2>
+<p>Bağlantılar şifrelidir (HTTPS). Yapay zeka sağlayıcılarına ait anahtarlar uygulamanın içinde
+değil, bizim sunucumuzda tutulur; uygulama kendi kimliğiyle bağlanır. Hiçbir sistem tümüyle
+güvenli değildir; bir ihlal olursa mevzuatın öngördüğü sürede bildiririz.</p>
+
+<h2>10. Çocuklar</h2>
+<p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir; bilerek onlardan veri toplamayız.</p>
+
+<h2>11. Değişiklikler</h2>
+<p>Politikayı güncellersek yukarıdaki tarihi değiştiririz. Önemli bir değişiklikte uygulama
+içinde bildirir, gerekiyorsa onayınızı yeniden isteriz.</p>
+
+<h2>12. İletişim</h2>
+<p><strong>Ersal Sarıkaya</strong> · <a href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a></p>
+
+<hr>
+
+<h1 id="en">Privacy Policy (English)</h1>
+<p class="meta">Camera Assistant · Last updated: 15.08.2026 · Version 2.0</p>
+
+<div class="card">
+<p><strong>In short:</strong> the photos you take stay on your phone and are never uploaded to
+our servers. While AI coaching is on, camera frames go to the provider you chose, are used for
+that moment only, and are not stored there. We do not record audio. You can withdraw consent at
+any time and AI processing stops immediately.</p>
+</div>
+
+<h2>1. Who is responsible</h2>
+<p>The controller of your data is <strong>Ersal Sarıkaya</strong>. Contact:
+<a href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a>.</p>
+<p class="muted">Basis: KVKK art. 10 (Turkey) and GDPR art. 13(1)(a) both require the
+controller’s identity to be stated.</p>
+
+<h2>2. What we process</h2>
+<table>
+<tr><th>Data</th><th>Why</th></tr>
+<tr><td>Email, display name, optional profile photo</td><td>To create your account and sign you in</td></tr>
+<tr><td>Device ID, model, OS, advertising ID</td><td>Security, debugging, advertising</td></tr>
+<tr><td>Usage counters (shots, mode, quota)</td><td>To calculate your daily allowance and improve the service</td></tr>
+<tr><td><strong>Camera frames</strong></td><td>While AI coaching is on, to produce that moment’s guidance — see section 4</td></tr>
+</table>
+<p><strong>Photos you take stay on your phone.</strong> They are not uploaded to our servers.
+<strong>We do not record audio</strong> — the voice coach only speaks; it does not listen, and
+the app does not request microphone permission.</p>
+
+<h2>3. Purposes and legal bases</h2>
+<table>
+<tr><th>Purpose</th><th>Legal basis (GDPR art. 6 / KVKK art. 5)</th></tr>
+<tr><td>Providing the AI photography coaching</td><td>Performance of a contract + <strong>your explicit consent</strong> for the AI processing</td></tr>
+<tr><td>Accounts and authentication</td><td>Performance of a contract</td></tr>
+<tr><td>Subscriptions, quota, abuse prevention</td><td>Contract and legitimate interest</td></tr>
+<tr><td>Analytics</td><td>Consent (optional)</td></tr>
+<tr><td>Advertising</td><td>Consent for personalisation, otherwise legitimate interest</td></tr>
+</table>
+
+<h2>4. AI processing and international transfer</h2>
+<p>When AI coaching is on, camera frames are sent in real time to the provider you selected:
+<strong>Google (Gemini)</strong>, <strong>OpenAI</strong> or <strong>Anthropic</strong>. They do
+not store those frames and do not use them to train their models. Your face may appear in them.</p>
+<p>Their servers are outside Turkey, including in the USA, so the transfer relies on
+<strong>your explicit consent under KVKK art. 9</strong> — the separate “AI processing” box on
+the consent screen. If you decline, the app still works as a camera; only the AI features are off.</p>
+<p class="muted"><strong>We do not do face recognition.</strong> On-device face
+<em>detection</em> measures whether a face is present and at what angle. It identifies nobody, is
+matched against no database, and is not stored. On that basis the processing is not biometric
+data under KVKK art. 6 or GDPR art. 9, which concern processing carried out <em>for the purpose
+of uniquely identifying</em> a person.</p>
+<p>Provider policies:
+<a href="https://policies.google.com/privacy">Google</a> ·
+<a href="https://openai.com/policies/privacy-policy">OpenAI</a> ·
+<a href="https://www.anthropic.com/legal/privacy">Anthropic</a>.</p>
+
+<h2>5. Who we share with</h2>
+<p>We do not sell your personal data. We share it only with the services that run the product:
+the AI providers above; <strong>Google Firebase</strong> for authentication and database;
+<strong>Google Play</strong> for payments; <strong>Google AdMob</strong> for advertising.</p>
+
+<h2>6. Retention and deletion</h2>
+<ul>
+<li><strong>Camera frames:</strong> not stored; discarded once the guidance is produced.</li>
+<li><strong>Photos you take:</strong> on your phone only; deleting them is up to you.</li>
+<li><strong>Account data and consent records:</strong> for as long as your account exists.</li>
+<li><strong>Usage counters:</strong> kept per day, cleared when the account is deleted.</li>
+</ul>
+<p>You can delete your account from <em>Profile → Delete account</em>; that also deletes your
+cloud records and consent history. Photos on your phone remain yours.</p>
+
+<h2>7. Your rights</h2>
+<p>Under KVKK art. 11 and GDPR art. 15-22 you may access, correct, delete, restrict, port and
+object. Where processing relies on consent, you may withdraw it at any time.</p>
+<p>Most of it is one tap inside the app: on the <em>Profile</em> screen you can
+<strong>download</strong> your data as JSON, <strong>withdraw</strong> AI consent, or
+<strong>delete</strong> your account. To write to us: <a href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a>.</p>
+<p class="muted">We answer within 30 days at the latest. If you are not satisfied you may
+complain to the Turkish Personal Data Protection Board, or to your own supervisory authority in
+the EEA/UK.</p>
+
+<h2>8. Advertising</h2>
+<p>The free tier shows Google AdMob ads. In the EEA and the UK, consent for personalised ads is
+collected through the Google UMP form before any ad is requested; without it, ads are
+non-personalised. Paid plans show no ads. You can reopen the form from <em>Settings → About</em>.</p>
+
+<h2>9. Security</h2>
+<p>Connections are encrypted (HTTPS). Provider API keys are not in the app; they live on our
+server and the app authenticates as itself. No system is completely secure; if a breach occurs we
+notify as the law requires.</p>
+
+<h2>10. Children</h2>
+<p>The app is not directed at children under 13 and we do not knowingly collect their data.</p>
+
+<h2>11. Changes</h2>
+<p>If we update this policy we change the date above. For significant changes we notify you in
+the app and ask for consent again where required.</p>
+
+<h2>12. Contact</h2>
+<p><strong>Ersal Sarıkaya</strong> · <a href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a></p>
+
+</div>
+</body>
+</html>
