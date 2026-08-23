@@ -86,10 +86,14 @@ sürece muafiyet kapsamındadır; eşikler aşılırsa kayıt gerekir.</p>
 <tr><td>Cihaz kimliği, model, işletim sistemi, reklam kimliği</td><td>Güvenlik, hata ayıklama, reklam gösterimi</td></tr>
 <tr><td>Kullanım sayaçları (kaç çekim, hangi mod, kota)</td><td>Günlük hakkınızı hesaplamak, hizmeti iyileştirmek</td></tr>
 <tr><td><strong>Kamera kareleri</strong></td><td>Yapay zeka koçluğu açıkken o anki yönlendirmeyi üretmek — bkz. Bölüm 4</td></tr>
+<tr><td>Kilitlenme ve donma (ANR) raporları: yığın izi, cihaz modeli, işletim sistemi ve uygulama sürümü, olayın zamanı</td><td>Çöken ya da donan sürümü bulup düzeltmek</td></tr>
 </table>
 <p><strong>Çektiğiniz fotoğraflar telefonunuzda kalır.</strong> Bizim sunucularımıza yüklenmez.
 <strong>Ses kaydı yapmıyoruz</strong> — sesli koç yalnız konuşur, dinlemez; uygulama mikrofon
 izni istemez.</p>
+<p><strong>Kilitlenme raporlarında fotoğrafınız yoktur.</strong> Uygulama beklenmedik şekilde
+kapanır ya da donarsa, o anda hangi kod satırının çalıştığını gösteren teknik bir rapor
+gönderilir. Fotoğraf, kamera karesi, e-posta veya mesaj içermez.</p>
 
 <h2>3. Neden işliyoruz, hangi hukuki sebeple</h2>
 <table>
@@ -97,7 +101,8 @@ izni istemez.</p>
 <tr><td>Yapay zeka fotoğraf koçluğunu sunmak</td><td>Sözleşmenin ifası + <strong>açık rızanız</strong> (yapay zeka işlemesi için)</td></tr>
 <tr><td>Hesap ve kimlik doğrulama</td><td>Sözleşmenin ifası</td></tr>
 <tr><td>Abonelik, kota, kötüye kullanımın önlenmesi</td><td>Sözleşmenin ifası ve meşru menfaat</td></tr>
-<tr><td>Analitik</td><td>Açık rıza (isteğe bağlı)</td></tr>
+<tr><td>Analitik</td><td>Açık rıza (isteğe bağlı) — onaylamazsanız ölçüm hiç başlamaz</td></tr>
+<tr><td>Kilitlenme ve donma raporlaması</td><td>Meşru menfaat (KVKK m.5/2-f, GDPR m.6/1-f) — uygulamanın çalışır kalması</td></tr>
 <tr><td>Reklam</td><td>Kişiselleştirme için açık rıza; aksi hâlde meşru menfaat</td></tr>
 </table>
 
@@ -124,7 +129,8 @@ amacıyla yapılan işlemedir.</p>
 <p>Kişisel verilerinizi satmıyoruz. Yalnızca ürünü çalıştıran hizmetlerle paylaşıyoruz:
 yukarıdaki yapay zeka sağlayıcıları; kimlik doğrulama ve veritabanı için <strong>Google
 Firebase</strong>; ödeme ve abonelik için <strong>Google Play</strong>; reklam için
-<strong>Google AdMob</strong>.</p>
+<strong>Google AdMob</strong>; kilitlenme ve donma raporları için <strong>Firebase
+Crashlytics</strong> (Google).</p>
 
 <h2>6. Ne kadar saklıyoruz, nasıl siliyoruz</h2>
 <ul>
@@ -132,6 +138,7 @@ Firebase</strong>; ödeme ve abonelik için <strong>Google Play</strong>; reklam
 <li><strong>Çektiğiniz fotoğraflar:</strong> yalnız telefonunuzda; silmek sizin elinizde.</li>
 <li><strong>Hesap bilgileri ve onay kayıtları:</strong> hesabınız durduğu sürece.</li>
 <li><strong>Kullanım sayaçları:</strong> günlük tutulur; hesap silinince temizlenir.</li>
+<li><strong>Kilitlenme ve donma raporları:</strong> Firebase Crashlytics’te 90 gün sonra silinir.</li>
 </ul>
 <p>Uygulama içinden <em>Profil → Hesabımı Sil</em> ile hesabınızı silebilirsiniz; bu işlem bulut
 kayıtlarınızı ve onay geçmişinizi de siler. Telefonunuzdaki fotoğraflar sizde kalır.</p>
@@ -192,10 +199,14 @@ controller’s identity to be stated.</p>
 <tr><td>Device ID, model, OS, advertising ID</td><td>Security, debugging, advertising</td></tr>
 <tr><td>Usage counters (shots, mode, quota)</td><td>To calculate your daily allowance and improve the service</td></tr>
 <tr><td><strong>Camera frames</strong></td><td>While AI coaching is on, to produce that moment’s guidance — see section 4</td></tr>
+<tr><td>Crash and ANR (freeze) reports: stack trace, device model, OS and app version, time of the event</td><td>To find and fix the build that crashed or froze</td></tr>
 </table>
 <p><strong>Photos you take stay on your phone.</strong> They are not uploaded to our servers.
 <strong>We do not record audio</strong> — the voice coach only speaks; it does not listen, and
 the app does not request microphone permission.</p>
+<p><strong>Crash reports contain none of your photos.</strong> If the app closes unexpectedly or
+freezes, it sends a technical report of what code was running at that moment. It carries no
+photos, no camera frames, no email and no messages.</p>
 
 <h2>3. Purposes and legal bases</h2>
 <table>
@@ -203,7 +214,8 @@ the app does not request microphone permission.</p>
 <tr><td>Providing the AI photography coaching</td><td>Performance of a contract + <strong>your explicit consent</strong> for the AI processing</td></tr>
 <tr><td>Accounts and authentication</td><td>Performance of a contract</td></tr>
 <tr><td>Subscriptions, quota, abuse prevention</td><td>Contract and legitimate interest</td></tr>
-<tr><td>Analytics</td><td>Consent (optional)</td></tr>
+<tr><td>Analytics</td><td>Consent (optional) — decline it and measurement never starts</td></tr>
+<tr><td>Crash and ANR reporting</td><td>Legitimate interest (GDPR art. 6(1)(f), KVKK art. 5(2)(f)) — keeping the app working</td></tr>
 <tr><td>Advertising</td><td>Consent for personalisation, otherwise legitimate interest</td></tr>
 </table>
 
@@ -227,7 +239,8 @@ of uniquely identifying</em> a person.</p>
 <h2>5. Who we share with</h2>
 <p>We do not sell your personal data. We share it only with the services that run the product:
 the AI providers above; <strong>Google Firebase</strong> for authentication and database;
-<strong>Google Play</strong> for payments; <strong>Google AdMob</strong> for advertising.</p>
+<strong>Google Play</strong> for payments; <strong>Google AdMob</strong> for advertising;
+<strong>Firebase Crashlytics</strong> (Google) for crash and freeze reports.</p>
 
 <h2>6. Retention and deletion</h2>
 <ul>
@@ -235,6 +248,7 @@ the AI providers above; <strong>Google Firebase</strong> for authentication and 
 <li><strong>Photos you take:</strong> on your phone only; deleting them is up to you.</li>
 <li><strong>Account data and consent records:</strong> for as long as your account exists.</li>
 <li><strong>Usage counters:</strong> kept per day, cleared when the account is deleted.</li>
+<li><strong>Crash and ANR reports:</strong> deleted from Firebase Crashlytics after 90 days.</li>
 </ul>
 <p>You can delete your account from <em>Profile → Delete account</em>; that also deletes your
 cloud records and consent history. Photos on your phone remain yours.</p>
