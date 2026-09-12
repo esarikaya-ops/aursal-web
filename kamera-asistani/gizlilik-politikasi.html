@@ -1,43 +1,7 @@
-<!doctype html>
-<!--
-  Camera Assistant — Gizlilik Politikası / Privacy Policy
-  ======================================================
-  SADE SÜRÜM (2.0, 15 Ağustos 2026). Tek geliştiricinin avukata gitmeden
-  yayınlayabilmesi için yazıldı. Kimlik alanları DOLDURULDU (16 Ağustos 2026): veri sorumlusu
-    Ersal Sarıkaya, iletişim esarikaya@aursal.com.
-    ⚠️ E-posta aursal.com alan adına bağlı; alan adı ve posta kutusu
-    ÇALIŞIR durumda olmadan bu belge yayınlanmamalı — KVKK m.11
-    başvuru hakkı, ulaşılamayan bir adresle karşılanmış olmaz.
-  Başka yer tutucu yoktur (önceki sürümde 22 tane vardı).
-  Neyin neden çıkarıldığı: docs/HANDOFF.md §24.6.
-
-  Uygulama içindeki metin (strings.xml legal_privacy_*) bu sayfayla AYNI bölümleri
-  taşır; biri değişirse diğeri de değişmeli.
--->
-<html lang="tr">
-<head>
-<meta charset="utf-8">
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kamera Asistanı — Gizlilik Politikası</title>
-<style>
-  :root { --fg:#1a1a1a; --muted:#555; --bg:#fff; --card:#f6f7f9; --accent:#0f6e8c; --border:#e2e5e9; }
-  @media (prefers-color-scheme: dark) {
-    :root { --fg:#e6e6e6; --muted:#a0a4ab; --bg:#0f1319; --card:#161b22; --accent:#5cc9f0; --border:#2a2f37; }
-  }
-  * { box-sizing: border-box; }
-  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-         color:var(--fg); background:var(--bg); line-height:1.65; }
-  .wrap { max-width:820px; margin:0 auto; padding:2rem 1.25rem 5rem; }
-  h1 { font-size:1.9rem; margin:.3rem 0; }
-  h2 { font-size:1.25rem; margin:2.2rem 0 .6rem; padding-top:.6rem; border-top:1px solid var(--border); }
-  .meta { color:var(--muted); font-size:.9rem; margin-bottom:1rem; }
-  .card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:1rem 1.25rem; }
-  .muted { color:var(--muted); font-size:.92rem; }
-  table { width:100%; border-collapse:collapse; margin:.8rem 0; font-size:.94rem; }
-  th, td { text-align:left; padding:.5rem .6rem; border:1px solid var(--border); vertical-align:top; }
-  th { background:var(--card); }
-  a { color:var(--accent); }
-
+<style>:root{--bg:#f8fafc;--fg:#1f2937;--accent:#155e75;--card:white;--border:#cbd5e1;--muted:#475569}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.7 system-ui,sans-serif}.wrap{max-width:850px;margin:auto;padding:24px}a{color:var(--accent)}nav{display:flex;flex-wrap:wrap;gap:20px}article{padding:20px 0;border-bottom:1px solid var(--border)}h1{font-size:2rem}h2{font-size:1.6rem}h3{font-size:1.15rem}p{white-space:pre-line;overflow-wrap:anywhere}html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
     /* aursal.com palette, applied over the tokens above (scripts/build_web.py) */
     :root {
       --fg:#33403f; --muted:#7a857f; --bg:#f4f2ec;
@@ -50,245 +14,428 @@
       }
     }
     h1, h2, h3 { color: var(--fg); letter-spacing:-.01em; }
-  </style>
-  <meta name="robots" content="noindex, nofollow">
-</head>
-<body>
-<div class="wrap">
+  </style></head><body><div class="wrap">
 <p style="margin-bottom:1.5rem"><a href="https://aursal.com/">← AURSAL</a></p>
+<h1>Camera Assistant</h1><p>Privacy Policy / Gizlilik Politikası</p>
+<nav aria-label="Language"><a href="#tr" lang="tr">Türkçe</a> <a href="#en" lang="en">English</a> <a href="#id" lang="id">Bahasa Indonesia</a> <a href="#vi" lang="vi">Tiếng Việt</a> <a href="#th" lang="th">ไทย</a></nav>
+<article id="tr" lang="tr"><h2>Türkçe</h2>
+<p>Son güncelleme: 2026-09-12</p>
+<section><h3>Kısaca</h3><p>Çektiğiniz fotoğraflar telefonunuzda kalır; sunucularımıza yüklenmez ve orada saklanmaz. AI koçluğu, değerlendirme veya düzenleme istediğinizde kamera karesi ya da seçtiğiniz fotoğraf, seçilen sağlayıcının (Google, OpenAI veya Anthropic) yurt dışındaki sunucularına gönderilir; sağlayıcı bunu güvenlik amacıyla 30 güne kadar tutabilir. Ses kaydı yapmayız. Uygulama 18 yaş ve üzeri içindir. AI iznini istediğiniz an Profil’den geri çekebilirsiniz; yeni AI işlemesi durur.
 
-<h1>Gizlilik Politikası</h1>
-<p class="meta">Camera Assistant · Son güncelleme: 15.08.2026 · Sürüm 2.0</p>
-<p><a href="#en">English version below ↓</a></p>
+Bu politika Camera Assistant’ın kişisel verilerinizi nasıl işlediğini açıklar. Uygulamadaki metin ile aursal.com’daki metin aynıdır.</p></section>
+<section><h3>Veri sorumlusu kim</h3><p>Bu uygulamayı işleten ve verilerinizden sorumlu olan: Ersal Sarıkaya. İletişim: esarikaya@aursal.com
 
-<div class="card">
-<p><strong>Kısaca:</strong> Çektiğiniz fotoğraflar telefonunuzda kalır, sunucularımıza
-yüklenmez. Yapay zeka koçluğu açıkken kamera kareleri yalnız o an için seçtiğiniz sağlayıcıya
-gönderilir ve orada saklanmaz. Ses kaydı yapmıyoruz. Onayınızı istediğiniz an geri
-çekebilirsiniz; çektiğiniz anda yapay zeka işlemesi durur.</p>
-</div>
+Bu politikayla ilgili her konuda — erişim, düzeltme, silme ve itiraz dahil — bu adresten bize ulaşabilirsiniz. Başvurunuza en geç 30 gün içinde yanıt veririz.
 
-<h2>1. Veri sorumlusu</h2>
-<p>Bu uygulamayı işleten ve verilerinizden sorumlu olan: <strong>Ersal Sarıkaya</strong>.
-İletişim: <a href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a>.</p>
-<p class="muted">Dayanak: KVKK m.10 ve Aydınlatma Yükümlülüğü Tebliği veri sorumlusunun
-kimliğinin bildirilmesini ister; GDPR m.13(1)(a) aynısını söyler.</p>
-<p class="muted"><strong>VERBİS kaydı:</strong> Kişisel Verileri Koruma Kurulu’nun 2018/32
-sayılı kararına göre, yıllık çalışan sayısı 50’den az <em>ve</em> yıllık mali bilanço toplamı
-25 milyon TL’nin altında olan, ana faaliyeti özel nitelikli veri işlemek olmayan veri
-sorumluları VERBİS’e kayıttan muaftır. Bu uygulama tek geliştirici tarafından işletildiği
-sürece muafiyet kapsamındadır; eşikler aşılırsa kayıt gerekir.</p>
+VERBİS: Uygulama tek geliştirici tarafından işletilmektedir ve Kişisel Verileri Koruma Kurulu’nun küçük veri sorumluları için tanıdığı kayıt muafiyeti (çalışan sayısı ve mali bilanço eşikleri; ana faaliyet özel nitelikli veri işlemek değil) kapsamındadır. Eşikler aşılırsa kayıt yapılır.
 
-<h2>2. Hangi verileri işliyoruz</h2>
-<table>
-<tr><th>Veri</th><th>Neden</th></tr>
-<tr><td>E-posta, görünen ad, isteğe bağlı profil fotoğrafı</td><td>Hesabınızı oluşturmak, girişinizi sağlamak</td></tr>
-<tr><td>Cihaz kimliği, model, işletim sistemi, reklam kimliği</td><td>Güvenlik, hata ayıklama, reklam gösterimi</td></tr>
-<tr><td>Kullanım sayaçları (kaç çekim, hangi mod, kota)</td><td>Günlük hakkınızı hesaplamak, hizmeti iyileştirmek</td></tr>
-<tr><td><strong>Kamera kareleri</strong></td><td>Yapay zeka koçluğu açıkken o anki yönlendirmeyi üretmek — bkz. Bölüm 4</td></tr>
-<tr><td>Kilitlenme ve donma (ANR) raporları: yığın izi, cihaz modeli, işletim sistemi ve uygulama sürümü, olayın zamanı</td><td>Çöken ya da donan sürümü bulup düzeltmek</td></tr>
-</table>
-<p><strong>Çektiğiniz fotoğraflar telefonunuzda kalır.</strong> Bizim sunucularımıza yüklenmez.
-<strong>Ses kaydı yapmıyoruz</strong> — sesli koç yalnız konuşur, dinlemez; uygulama mikrofon
-izni istemez.</p>
-<p><strong>Kilitlenme raporlarında fotoğrafınız yoktur.</strong> Uygulama beklenmedik şekilde
-kapanır ya da donarsa, o anda hangi kod satırının çalıştığını gösteren teknik bir rapor
-gönderilir. Fotoğraf, kamera karesi, e-posta veya mesaj içermez.</p>
+Dayanak: KVKK m.10 ve GDPR m.13.</p></section>
+<section><h3>Hangi verileri işliyoruz</h3><p>Hesap: e-posta, görünen ad, isteğe bağlı profil fotoğrafı — hesabınızı açmak ve giriş sağlamak (Firebase). Kaydettiğiniz profil fotoğrafı Firebase Storage’da tutulur.
 
-<h2>3. Neden işliyoruz, hangi hukuki sebeple</h2>
-<table>
-<tr><th>Amaç</th><th>Hukuki sebep (KVKK m.5 / GDPR m.6)</th></tr>
-<tr><td>Yapay zeka fotoğraf koçluğunu sunmak</td><td>Sözleşmenin ifası + <strong>açık rızanız</strong> (yapay zeka işlemesi için)</td></tr>
-<tr><td>Hesap ve kimlik doğrulama</td><td>Sözleşmenin ifası</td></tr>
-<tr><td>Abonelik, kota, kötüye kullanımın önlenmesi</td><td>Sözleşmenin ifası ve meşru menfaat</td></tr>
-<tr><td>Analitik</td><td>Açık rıza (isteğe bağlı) — onaylamazsanız ölçüm hiç başlamaz</td></tr>
-<tr><td>Kilitlenme ve donma raporlaması</td><td>Meşru menfaat (KVKK m.5/2-f, GDPR m.6/1-f) — uygulamanın çalışır kalması</td></tr>
-<tr><td>Reklam</td><td>Kişiselleştirme için açık rıza; aksi hâlde meşru menfaat</td></tr>
-</table>
+Yaş beyanı: giriş öncesi doğum tarihi cihazda hesaplanır; saklanmaz ve gönderilmez. Yalnız uygunluk sonucu ve politika sürümü kaydedilir (bkz. Çocukların Gizliliği).
 
-<h2>4. Yapay zeka ve yurt dışına aktarım</h2>
-<p>Yapay zeka koçluğunu açtığınızda kamera kareleri, seçtiğiniz sağlayıcıya gerçek zamanlı
-gönderilir: <strong>Google (Gemini)</strong>, <strong>OpenAI</strong> veya
-<strong>Anthropic</strong>. Kareleri <strong>kendi sunucularımızda saklamayız</strong> ve
-kendi modellerimizi eğitmek için kullanmayız. Sağlayıcılar kareleri kendi şart ve gizlilik
-politikaları kapsamında işler; bu koşullar hizmet kalitesi ve kötüye kullanımın önlenmesi için
-sınırlı süreli saklama içerebilir. Güncel koşullar için ilgili sağlayıcının politikasına
-bakınız. Karelerde yüzünüz görünebilir.</p>
-<p>Sunucuları yurt dışındadır (ABD dahil). Bu nedenle aktarım <strong>KVKK m.9 uyarınca açık
-rızanıza</strong> dayanır — onay ekranındaki ayrı “Yapay Zeka İşleme” kutusu budur.
-Onaylamazsanız uygulama kamera olarak çalışmaya devam eder, yalnız yapay zeka özellikleri
-kapalı olur.</p>
-<p class="muted"><strong>Yüz tanıma yapmıyoruz.</strong> Cihazda çalışan yüz <em>tespiti</em>,
-karede yüz olup olmadığını ve açısını ölçer; kimseyi tanımlamaz, hiçbir veri tabanıyla
-eşleştirmez ve bu ölçümler saklanmaz. Bu nedenle işleme KVKK m.6 ve GDPR m.9 anlamında
-biyometrik veri işleme sayılmaz — biyometrik veri, kişiyi <em>tekil olarak tanımlamak</em>
-amacıyla yapılan işlemedir.</p>
-<p>Sağlayıcı politikaları:
-<a href="https://policies.google.com/privacy">Google</a> ·
-<a href="https://openai.com/policies/privacy-policy">OpenAI</a> ·
-<a href="https://www.anthropic.com/legal/privacy">Anthropic</a>.</p>
+Fotoğraflar: çekilen, içe aktarılan ve düzenlenen fotoğraflar cihaz albümüne kaydedilir; bize yüklenmez. Kamera kareleri ve seçtiğiniz fotoğraf yalnız AI koçluğu, değerlendirme veya düzenleme istediğinizde cihazdan çıkar (bkz. Yapay Zeka İşleme).
 
-<h2>5. Kimlerle paylaşıyoruz</h2>
-<p>Kişisel verilerinizi satmıyoruz. Yalnızca ürünü çalıştıran hizmetlerle paylaşıyoruz:
-yukarıdaki yapay zeka sağlayıcıları; kimlik doğrulama ve veritabanı için <strong>Google
-Firebase</strong>; ödeme ve abonelik için <strong>Google Play</strong>; reklam için
-<strong>Google AdMob</strong>; kilitlenme ve donma raporları için <strong>Firebase
-Crashlytics</strong> (Google).</p>
+Kullanım sayaçları: kaç çekim, hangi mod, kalan hak — hakkınızı hesaplamak ve kötüye kullanımı önlemek.
 
-<h2>6. Ne kadar saklıyoruz, nasıl siliyoruz</h2>
-<ul>
-<li><strong>Kamera kareleri:</strong> saklanmaz; yönlendirme üretilince atılır.</li>
-<li><strong>Çektiğiniz fotoğraflar:</strong> yalnız telefonunuzda; silmek sizin elinizde.</li>
-<li><strong>Hesap bilgileri ve onay kayıtları:</strong> hesabınız durduğu sürece.</li>
-<li><strong>Kullanım sayaçları:</strong> günlük tutulur; hesap silinince temizlenir.</li>
-<li><strong>Kilitlenme ve donma raporları:</strong> Firebase Crashlytics’te 90 gün sonra silinir.</li>
-</ul>
-<p>Uygulama içinden <em>Profil → Hesabımı Sil</em> ile hesabınızı silebilirsiniz; bu işlem bulut
-kayıtlarınızı ve onay geçmişinizi de siler. Telefonunuzdaki fotoğraflar sizde kalır.</p>
+Cihaz ve reklam kimliği, uygulama sürümü: güvenlik, hata ayıklama ve ücretsiz planda reklam (Firebase, Google Play, AdMob).
 
-<h2>7. Haklarınız</h2>
-<p>KVKK m.11 ve GDPR m.15-22 uyarınca verilerinize erişme, düzeltme, silme, işlemeyi sınırlama,
-taşınabilirlik ve itiraz haklarınız vardır. Açık rızaya dayanan işlemelerde rızanızı her zaman
-geri çekebilirsiniz.</p>
-<p>Çoğu uygulama içinde tek dokunuş: <em>Profil</em> ekranında verilerinizi
-<strong>indirebilir</strong> (JSON), yapay zeka onayınızı <strong>geri çekebilir</strong> veya
-hesabınızı <strong>silebilirsiniz</strong>. Yazışmak için: <a href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a>.</p>
-<p class="muted">Başvurunuz en geç 30 gün içinde yanıtlanır. Sonuçtan memnun kalmazsanız
-Kişisel Verileri Koruma Kurulu’na — AB/İngiltere’de kendi denetim makamınıza — başvurabilirsiniz.</p>
+Çökme ve donma raporları: yığın izi, cihaz modeli, işletim sistemi, uygulama sürümü, olay zamanı — fotoğraf, kare, e-posta veya mesaj içermez (Firebase Crashlytics).
 
-<h2>8. Reklamlar</h2>
-<p>Ücretsiz sürümde Google AdMob reklamları gösterilir. AB ve İngiltere’de kişiselleştirilmiş
-reklam onayı, herhangi bir reklam isteğinden önce Google’ın UMP onay formuyla alınır; onay yoksa
-reklamlar kişiselleştirilmeden gösterilir. Ücretli planlarda reklam yoktur. Onay formunu
-<em>Ayarlar → Hakkında</em> bölümünden istediğiniz zaman yeniden açabilirsiniz.</p>
+İçerik bildirimleri: yazdığınız metin, hesap kimliği, uygulama sürümü, tarih; fotoğraf otomatik eklenmez.
 
-<h2>9. Güvenlik</h2>
-<p>Bağlantılar şifrelidir (HTTPS). Yapay zeka sağlayıcılarına ait anahtarlar uygulamanın içinde
-değil, bizim sunucumuzda tutulur; uygulama kendi kimliğiyle bağlanır. Hiçbir sistem tümüyle
-güvenli değildir; bir ihlal olursa mevzuatın öngördüğü sürede bildiririz.</p>
+Mikrofon sesi kaydetmeyiz: sesli koç yalnız konuşur, dinlemez; uygulama mikrofon izni istemez.
 
-<h2>10. Çocuklar</h2>
-<p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir; bilerek onlardan veri toplamayız.</p>
+Reklam istekleri ve otomatik çökme raporları uygun yaş beyanından sonra başlar; bu, cihazdaki üçüncü taraf SDK’ların hiçbir teknik veri işlemeyeceği garantisi değildir.</p></section>
+<section><h3>Bilgilerinizi nasıl kullanırız</h3><p>Bilgilerinizi şunlar için kullanırız: (a) uygulamanın çalışması ve geliştirilmesi; (b) aboneliklerin ve hakların yönetimi; (c) istediğiniz AI koçluğu, değerlendirme ve düzenleme; (d) isteğe bağlı kullanım ve performans analizi; (e) önemli güncellemelerin bildirilmesi.</p></section>
+<section><h3>Neden işliyoruz, hangi hukuki sebeple</h3><p>AI fotoğraf koçluğu, değerlendirme ve düzenleme: sözleşmenin ifası + AI işlemesi için açık rızanız (ayrı kutu).
 
-<h2>11. Değişiklikler</h2>
-<p>Politikayı güncellersek yukarıdaki tarihi değiştiririz. Önemli bir değişiklikte uygulama
-içinde bildirir, gerekiyorsa onayınızı yeniden isteriz.</p>
+Hesap ve kimlik doğrulama: sözleşmenin ifası.
 
-<h2>12. İletişim</h2>
-<p><strong>Ersal Sarıkaya</strong> · <a href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a></p>
+Abonelik, kota, kötüye kullanımın önlenmesi: sözleşmenin ifası ve meşru menfaat.
 
-<hr>
+Analitik: açık rıza (isteğe bağlı) — onaylamazsanız ölçüm hiç başlamaz.
 
-<h1 id="en">Privacy Policy (English)</h1>
-<p class="meta">Camera Assistant · Last updated: 15.08.2026 · Version 2.0</p>
+Çökme ve donma raporlaması: meşru menfaat (KVKK m.5/2-f, GDPR m.6/1-f) — uygulamanın çalışır kalması.
 
-<div class="card">
-<p><strong>In short:</strong> the photos you take stay on your phone and are never uploaded to
-our servers. While AI coaching is on, camera frames go to the provider you chose, are used for
-that moment only, and are not stored there. We do not record audio. You can withdraw consent at
-any time and AI processing stops immediately.</p>
-</div>
+Reklam: kişiselleştirme için rıza (Google UMP), aksi hâlde meşru menfaat.
 
-<h2>1. Who is responsible</h2>
-<p>The controller of your data is <strong>Ersal Sarıkaya</strong>. Contact:
-<a href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a>.</p>
-<p class="muted">Basis: KVKK art. 10 (Turkey) and GDPR art. 13(1)(a) both require the
-controller’s identity to be stated.</p>
+Aydınlatma metnini okumak tüm işlemlere toplu rıza değildir. Yurt dışına aktarımın dayanağı ayrı bölümde açıklanır.</p></section>
+<section><h3>Kimlerle paylaşıyoruz</h3><p>Kişisel verilerinizi satmayız. Yalnızca ürünü çalıştıran hizmetlerle paylaşırız: istediğiniz AI işlemleri için Google/Gemini, OpenAI veya Anthropic; giriş, veritabanı, isteğe bağlı profil fotoğrafı ve çökme raporları için Google Firebase; ödeme ve abonelik için Google Play; ücretsiz planda reklam için Google AdMob. Cihaz albümü bulut yedeği değildir. AI analizi veya düzenleme seçildiğinde görsel ilgili sağlayıcıya gider; kaydedilen profil fotoğrafı ayrıca Firebase Storage’da tutulur. Sağlayıcıların kendi işleme faaliyetlerinde hizmet şartları ve gizlilik politikaları geçerlidir.</p></section>
+<section><h3>Yapay zeka işleme</h3><p>AI koçluğu, fotoğraf değerlendirmesi ve düzenleme; kamera karesini veya seçilen görseli ve talimatları Google (Gemini), OpenAI ya da Anthropic’e gönderir. Her istek — Gemini analiz, düzenleme ve Live, OpenAI ve Anthropic — önce bizim Cloud Run sunucumuzdan (Belçika) geçer. Sunucumuz görsel içeriğini saklamaz; kareleri kendi modellerimizi eğitmek için kullanmayız. Sağlayıcılar girdi ve çıktıları güvenlik, kötüye kullanımın önlenmesi ve yasal yükümlülükler için sınırlı süre tutabilir: OpenAI API kötüye kullanım günlükleri normalde 30 güne kadar; Anthropic API girdi ve çıktıları normalde 30 gün içinde silinir; Google Vertex AI (Gemini) veriyi model eğitiminde kullanmaz, kötüye kullanım izlemesi için sınırlı süre tutabilir. Özel sıfır saklama anlaşmamız yoktur. Karelerde yüzünüz görünebilir.
 
-<h2>2. What we process</h2>
-<table>
-<tr><th>Data</th><th>Why</th></tr>
-<tr><td>Email, display name, optional profile photo</td><td>To create your account and sign you in</td></tr>
-<tr><td>Device ID, model, OS, advertising ID</td><td>Security, debugging, advertising</td></tr>
-<tr><td>Usage counters (shots, mode, quota)</td><td>To calculate your daily allowance and improve the service</td></tr>
-<tr><td><strong>Camera frames</strong></td><td>While AI coaching is on, to produce that moment’s guidance — see section 4</td></tr>
-<tr><td>Crash and ANR (freeze) reports: stack trace, device model, OS and app version, time of the event</td><td>To find and fix the build that crashed or froze</td></tr>
-</table>
-<p><strong>Photos you take stay on your phone.</strong> They are not uploaded to our servers.
-<strong>We do not record audio</strong> — the voice coach only speaks; it does not listen, and
-the app does not request microphone permission.</p>
-<p><strong>Crash reports contain none of your photos.</strong> If the app closes unexpectedly or
-freezes, it sends a technical report of what code was running at that moment. It carries no
-photos, no camera frames, no email and no messages.</p>
+Yüz tanıma yapmıyoruz. Cihazda çalışan yüz tespiti karede yüz olup olmadığını, açısını ve ifadeyi ölçer; kimseyi tanımlamaz, hiçbir veri tabanıyla eşleştirmez ve bu ölçümler saklanmaz. Bu nedenle işleme KVKK m.6 ve GDPR m.9 anlamında biyometrik veri işleme sayılmaz.
 
-<h2>3. Purposes and legal bases</h2>
-<table>
-<tr><th>Purpose</th><th>Legal basis (GDPR art. 6 / KVKK art. 5)</th></tr>
-<tr><td>Providing the AI photography coaching</td><td>Performance of a contract + <strong>your explicit consent</strong> for the AI processing</td></tr>
-<tr><td>Accounts and authentication</td><td>Performance of a contract</td></tr>
-<tr><td>Subscriptions, quota, abuse prevention</td><td>Contract and legitimate interest</td></tr>
-<tr><td>Analytics</td><td>Consent (optional) — decline it and measurement never starts</td></tr>
-<tr><td>Crash and ANR reporting</td><td>Legitimate interest (GDPR art. 6(1)(f), KVKK art. 5(2)(f)) — keeping the app working</td></tr>
-<tr><td>Advertising</td><td>Consent for personalisation, otherwise legitimate interest</td></tr>
-</table>
+AI izni isteğe bağlıdır ve Profil’den geri çekilebilir. Geri çekme yeni istekleri durdurur ve devam eden işlemleri mümkün olduğu ölçüde iptal eder; sağlayıcıya ulaşmış veriyi geri alamaz. İzin vermezseniz kamera ve galeri çalışmaya devam eder; yalnız AI özellikleri kapalı olur.</p></section>
+<section><h3>Yurt dışına veri aktarımı</h3><p>Verileriniz Türkiye dışındaki sunucularda işlenir:
+• Google Cloud Run (bizim sunucumuz) — Belçika, AB — AI isteklerini iletmek; görsel saklanmaz.
+• Google Vertex AI (Gemini) — AB/ABD — AI koçluğu ve düzenleme; sınırlı süreli kötüye kullanım günlüğü.
+• OpenAI (OpenAI Ireland Ltd. üzerinden) — ABD — AI koçluğu, canlı koç ve düzenleme; 30 güne kadar.
+• Anthropic — ABD — AI koçluğu; 30 gün içinde silinir; AB-ABD Veri Gizliliği Çerçevesi sertifikalı.
+• Google Firebase, Google Play, Google AdMob — ABD/AB — hesap, ödeme, reklam, çökme raporları.
 
-<h2>4. AI processing and international transfer</h2>
-<p>When AI coaching is on, camera frames are sent in real time to the provider you selected:
-<strong>Google (Gemini)</strong>, <strong>OpenAI</strong> or <strong>Anthropic</strong>. <strong>We do not store those frames on our own servers</strong>
-and we do not use them to train our own models. The providers process them under their own terms
-and privacy policies, which may include limited retention for service quality and abuse
-prevention. See the relevant provider's policy for the current terms. Your face may appear in
-them.</p>
-<p>Their servers are outside Turkey, including in the USA, so the transfer relies on
-<strong>your explicit consent under KVKK art. 9</strong> — the separate “AI processing” box on
-the consent screen. If you decline, the app still works as a camera; only the AI features are off.</p>
-<p class="muted"><strong>We do not do face recognition.</strong> On-device face
-<em>detection</em> measures whether a face is present and at what angle. It identifies nobody, is
-matched against no database, and is not stored. On that basis the processing is not biometric
-data under KVKK art. 6 or GDPR art. 9, which concern processing carried out <em>for the purpose
-of uniquely identifying</em> a person.</p>
-<p>Provider policies:
-<a href="https://policies.google.com/privacy">Google</a> ·
-<a href="https://openai.com/policies/privacy-policy">OpenAI</a> ·
-<a href="https://www.anthropic.com/legal/privacy">Anthropic</a>.</p>
+Türkiye (KVKK m.9): Kurul henüz hiçbir ülke için yeterlilik kararı vermemiştir ve yukarıdaki sağlayıcılarla Kurul’un standart sözleşmesi imzalanmamıştır (talep edilmiştir). Bu nedenle AI işlemesi için aktarım, onay ekranındaki ayrı “AI Veri İşleme” kutusuyla verdiğiniz açık rızanıza dayanır. Rıza vermeden önce bilmeniz gereken riskler: bu ülkelerde Türk hukuku ve Kurul’un yetkisi doğrudan geçerli olmayabilir; o ülkelerin makamları kendi kanunlarına göre veriye erişim isteyebilir; sağlayıcı veriyi yukarıdaki süreler boyunca tutar; rızanızı geri çekmeniz gönderilmiş veriyi geri getirmez. Rızanız sürümü, tarihi ve kaynağıyla hesabınıza bağlı olarak kaydedilir; istediğiniz an geri çekebilirsiniz. Hesap, ödeme, reklam ve çökme raporu hizmetleri (Google) için aktarım, sizinle yaptığımız sözleşmenin ifası için zorunludur; bunlar olmadan uygulama sunulamaz.
 
-<h2>5. Who we share with</h2>
-<p>We do not sell your personal data. We share it only with the services that run the product:
-the AI providers above; <strong>Google Firebase</strong> for authentication and database;
-<strong>Google Play</strong> for payments; <strong>Google AdMob</strong> for advertising;
-<strong>Firebase Crashlytics</strong> (Google) for crash and freeze reports.</p>
+AB/AEA ve Birleşik Krallık (GDPR): ABD’ye aktarımlar sağlayıcıların veri işleme sözleşmeleri, AB standart sözleşme maddeleri ve varsa AB-ABD Veri Gizliliği Çerçevesi sertifikasıyla korunur.
 
-<h2>6. Retention and deletion</h2>
-<ul>
-<li><strong>Camera frames:</strong> not stored; discarded once the guidance is produced.</li>
-<li><strong>Photos you take:</strong> on your phone only; deleting them is up to you.</li>
-<li><strong>Account data and consent records:</strong> for as long as your account exists.</li>
-<li><strong>Usage counters:</strong> kept per day, cleared when the account is deleted.</li>
-<li><strong>Crash and ANR reports:</strong> deleted from Firebase Crashlytics after 90 days.</li>
-</ul>
-<p>You can delete your account from <em>Profile → Delete account</em>; that also deletes your
-cloud records and consent history. Photos on your phone remain yours.</p>
+Diğer ülkeler: aktarım bilgilendirilmiş açık rızanıza ve sağlayıcılarla yapılmış işleme sözleşmelerine dayanır. Bulunduğunuz ülkenin hukukundan doğan ek haklarınız saklıdır.
 
-<h2>7. Your rights</h2>
-<p>Under KVKK art. 11 and GDPR art. 15-22 you may access, correct, delete, restrict, port and
-object. Where processing relies on consent, you may withdraw it at any time.</p>
-<p>Most of it is one tap inside the app: on the <em>Profile</em> screen you can
-<strong>download</strong> your data as JSON, <strong>withdraw</strong> AI consent, or
-<strong>delete</strong> your account. To write to us: <a href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a>.</p>
-<p class="muted">We answer within 30 days at the latest. If you are not satisfied you may
-complain to the Turkish Personal Data Protection Board, or to your own supervisory authority in
-the EEA/UK.</p>
+Aktarım güvenceleri hakkında bilgi için: esarikaya@aursal.com</p></section>
+<section><h3>Ne kadar saklıyoruz, nasıl siliyoruz</h3><p>Kamera kareleri ve düzenleme için gönderilen görseller: sunucumuzda saklanmaz; sağlayıcıdaki süreler Yapay Zeka İşleme bölümünde.
 
-<h2>8. Advertising</h2>
-<p>The free tier shows Google AdMob ads. In the EEA and the UK, consent for personalised ads is
-collected through the Google UMP form before any ad is requested; without it, ads are
-non-personalised. Paid plans show no ads. You can reopen the form from <em>Settings → About</em>.</p>
+Çektiğiniz ve düzenlediğiniz fotoğraflar: yalnız telefonunuzda; silmek sizin elinizde.
 
-<h2>9. Security</h2>
-<p>Connections are encrypted (HTTPS). Provider API keys are not in the app; they live on our
-server and the app authenticates as itself. No system is completely secure; if a breach occurs we
-notify as the law requires.</p>
+Hesap bilgileri, izin ve yaş uygunluk kayıtları: hesabınız durduğu sürece.
 
-<h2>10. Children</h2>
-<p>The app is not directed at children under 13 and we do not knowingly collect their data.</p>
+Kullanım sayaçları: hak dönemine göre tutulur; hesap silinince temizlenir.
 
-<h2>11. Changes</h2>
-<p>If we update this policy we change the date above. For significant changes we notify you in
-the app and ask for consent again where required.</p>
+Çökme ve donma raporları: Firebase Crashlytics 90 gün sonra canlı ve yedek sistemlerden silme sürecini başlatır.
 
-<h2>12. Contact</h2>
-<p><strong>Ersal Sarıkaya</strong> · <a href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a></p>
+Google Play ödeme kayıtları ile sağlayıcıların güvenlik veya yasal saklama kayıtları kendi kurallarına tabidir.
 
-</div>
-</body>
-</html>
+Hesabınızı Profil → Hesabımı Sil ile ya da hesap e-postanızı belirterek esarikaya@aursal.com adresine yazarak silebilirsiniz; şifre göndermeyin, kimliğinizi doğrulamamız gerekebilir. Silme hesap kayıtlarını, izin geçmişini ve ilişkili bulut verilerini kapsar; kesilen işlem yeniden deneme veya destek gerektirebilir. Telefonunuzdaki fotoğraflar sizde kalır. Hesabı silmek Google Play aboneliğini iptal etmez.</p></section>
+<section><h3>Haklarınız</h3><p>KVKK m.11 ve GDPR m.15-22 uyarınca verilerinize erişme, düzeltme, silme, işlemeyi sınırlama, taşınabilirlik ve itiraz haklarınız vardır; açık rızaya dayanan işlemelerde rızanızı her zaman geri çekebilirsiniz.
+
+Çoğu uygulama içinde tek dokunuş: Profil ekranında verilerinizi indirebilir (JSON), AI iznini geri çekebilir, analitiği kapatabilir veya hesabınızı silebilirsiniz. Yazışmak için: esarikaya@aursal.com — en geç 30 gün içinde yanıtlarız. Sonuçtan memnun kalmazsanız Kişisel Verileri Koruma Kurulu’na, AB/AEA veya Birleşik Krallık’ta kendi denetim makamınıza başvurabilirsiniz.</p></section>
+<section><h3>Reklamlar</h3><p>Ücretsiz planda Google AdMob reklamları gösterilebilir. Gerekli bölgelerde reklam isteğinden önce Google UMP üzerinden reklam gizliliği tercihleri alınır. Bölge ve tercihlere göre kişiselleştirilmiş, kişiselleştirilmemiş veya sınırlı reklam gösterilebilir; reklam hiç gösterilmeyebilir. Kişiselleştirmeyi reddetmek her türlü cihaz verisi işlemesinin duracağı anlamına gelmez. Ayarlar’dan reklam gizliliği seçeneklerini yeniden açabilirsiniz. Ücretli planlarda reklam gösterilmez.</p></section>
+<section><h3>Güvenlik</h3><p>Bağlantılar şifrelidir (HTTPS). AI sağlayıcılarının anahtarları uygulamanın içinde değil, sunucumuzda tutulur; uygulama sunucuya Firebase kimliği ve Play Integrity/App Check doğrulamasıyla bağlanır. Bulut kayıtları Firebase erişim kurallarıyla yalnız hesap sahibine açıktır. Hiçbir sistem tümüyle güvenli değildir; bir ihlal olursa mevzuatın öngördüğü sürede bildiririz.</p></section>
+<section><h3>Çocukların Gizliliği</h3><p>Bu sürüm yalnız 18 yaş ve üzeri yetişkinlere yöneliktir; çocuklara yönelik sunulmaz. Hesap girişinden önce doğum tarihi cihazda yaş uygunluğu hesabı için kullanılır; doğum tarihi saklanmaz veya sunucuya gönderilmez. Cihazda uygunluk sonucu ve politika sürümü tutulur. Uygunluk beyanı, giriş sonrasında hesap kimliği, politika sürümü, beyan kaynağı ve sunucu kayıt zamanı ile saklanır. Bu yöntem bağımsız yaş veya kimlik doğrulaması değildir. Yaş kontrolünde engellenen kişiler mevcut hesaplarıyla ilgili erişim, düzeltme ve silme taleplerini esarikaya@aursal.com adresine iletebilir. Ücretli plan satın almak yaş koşulunu kaldırmaz. Çocuk verilerinin uygunsuz işlendiğini düşünüyorsanız aynı adresten bildirin.</p></section>
+<section><h3>Değişiklikler</h3><p>Politikayı güncellersek yukarıdaki tarihi ve sürümü değiştiririz. Önemli değişiklikler uygulamada bildirilir; yeni izin gerektiren bir değişiklikte ilgili AI işlemesi yeniden başlamadan önce izin istenir. Yalnız kamerayı kullanmaya devam etmek yeni AI işlemesine rıza sayılmaz.</p></section>
+</article>
+<article id="en" lang="en"><h2>English</h2>
+<p>Last updated: 2026-09-12</p>
+<section><h3>In short</h3><p>The photos you take stay on your phone; they are not uploaded to our servers and are not stored there. When you ask for AI coaching, critique or editing, the camera frame or the photo you selected is sent to the chosen provider’s servers abroad (Google, OpenAI or Anthropic); the provider may keep it for up to 30 days for safety. We do not record audio. The app is for ages 18 and over. You can withdraw AI permission at any time in Profile; new AI processing stops.
+
+This policy explains how Camera Assistant processes your personal data. The text in the app and the text on aursal.com are identical.</p></section>
+<section><h3>Who is responsible</h3><p>The controller of your data is Ersal Sarıkaya. Contact: esarikaya@aursal.com
+
+Write to that address to reach us about anything in this policy, including access, correction, deletion and objection. We answer within 30 days.
+
+VERBİS (Turkish controllers’ registry): the app is run by a single developer and falls under the Board’s registration exemption for small controllers (employee-count and balance-sheet thresholds; main activity is not processing special-category data). Should the thresholds be exceeded, we register.
+
+Basis: KVKK art. 10 (Turkey), GDPR art. 13 (EU).</p></section>
+<section><h3>What we process</h3><p>Account: email, display name, optional profile photo — to create your account and sign you in (Firebase). A profile photo you save is stored in Firebase Storage.
+
+Age declaration: before sign-in, a birth date is evaluated on the device; it is neither stored nor sent. Only the eligibility result and the policy version are recorded (see Children’s Privacy).
+
+Photos: captures, imported images and edited results are saved in the device album; they are not uploaded to us. Camera frames and the photo you select leave the device only when you ask for AI coaching, critique or editing (see AI processing).
+
+Usage counters: shots, mode, remaining allowance — to calculate your allowance and prevent abuse.
+
+Device and advertising identifiers, app version: security, debugging and ads on the free plan (Firebase, Google Play, AdMob).
+
+Crash and freeze reports: stack trace, device model, OS, app version, time of the event — no photos, frames, email or messages (Firebase Crashlytics).
+
+Content reports: the text you write, account identifier, app version, date; photos are not attached automatically.
+
+We do not record microphone audio: the voice coach only speaks, it does not listen, and the app does not request microphone permission.
+
+Ad requests and automatic crash reporting start after an eligible age declaration; this does not guarantee that third-party SDKs on the device process no technical data.</p></section>
+<section><h3>How we use your information</h3><p>We use your information to: (a) run and improve the app; (b) manage subscriptions and allowances; (c) provide the AI coaching, critique and editing you request; (d) optional usage and performance analytics; (e) communicate important updates.</p></section>
+<section><h3>Purposes and legal bases</h3><p>AI photo coaching, critique and editing: performance of a contract + your explicit consent for AI processing (separate box).
+
+Accounts and authentication: performance of a contract.
+
+Subscriptions, quota, abuse prevention: contract and legitimate interest.
+
+Analytics: consent (optional) — decline it and measurement never starts.
+
+Crash and freeze reporting: legitimate interest (GDPR art. 6(1)(f), KVKK art. 5(2)(f)) — keeping the app working.
+
+Advertising: consent for personalisation (Google UMP), otherwise legitimate interest.
+
+Reading a privacy notice is not blanket consent to all processing. The basis for transfers abroad is explained in its own section.</p></section>
+<section><h3>Who we share with</h3><p>We do not sell your personal data. We share it only with the services that run the product: Google/Gemini, OpenAI or Anthropic for the AI processing you request; Google Firebase for authentication, database, optional profile photo and crash reports; Google Play for payments and subscriptions; Google AdMob for ads on the free plan. The device album is not a cloud backup. Selecting AI analysis or editing sends the image to the relevant provider; a saved profile photo is stored separately in Firebase Storage. Provider service terms and privacy policies apply to their own processing.</p></section>
+<section><h3>AI processing</h3><p>AI coaching, critique and image editing send the camera frame or the selected image and instructions to Google (Gemini), OpenAI or Anthropic. Every request — Gemini analysis, editing and Live, OpenAI and Anthropic — first passes through our Cloud Run server (Belgium). Our server does not store image content; we do not use frames to train models of our own. Providers may keep inputs and outputs for a limited time for safety, abuse prevention and legal obligations: OpenAI API abuse-monitoring logs normally up to 30 days; Anthropic API inputs and outputs are normally deleted within 30 days; Google Vertex AI (Gemini) does not use the data to train models and may keep it for a limited time for abuse monitoring. We have no special zero-retention agreement. Your face may appear in the frames.
+
+We do not do face recognition. On-device face detection measures whether a face is present, its angle and expression; it identifies nobody, is matched against no database, and the measurements are not stored. On that basis the processing is not biometric data under KVKK art. 6 or GDPR art. 9.
+
+AI permission is optional and can be withdrawn in Profile. Withdrawal stops new requests and cancels ongoing work where possible; it cannot retract data already received by a provider. If you decline, camera and gallery keep working; only the AI features are off.</p></section>
+<section><h3>International data transfers</h3><p>Your data is processed on servers outside Turkey:
+• Google Cloud Run (our server) — Belgium, EU — relays AI requests; images are not stored.
+• Google Vertex AI (Gemini) — EU/USA — AI coaching and editing; limited abuse-monitoring logs.
+• OpenAI (via OpenAI Ireland Ltd.) — USA — AI coaching, live coach and editing; up to 30 days.
+• Anthropic — USA — AI coaching; deleted within 30 days; certified under the EU-US Data Privacy Framework.
+• Google Firebase, Google Play, Google AdMob — USA/EU — account, payments, ads, crash reports.
+
+Turkey (KVKK art. 9): the Board has not yet issued an adequacy decision for any country, and the Board’s standard contract has not been signed with the providers above (it has been requested). The transfer for AI processing therefore relies on the explicit consent you give with the separate “AI data processing” box on the consent screen. Risks you should know before consenting: Turkish law and the Board’s authority may not apply directly in those countries; their authorities may request access to data under their own laws; the provider keeps the data for the periods above; withdrawing consent does not bring back data already sent. Your consent is recorded with its version, date and source, linked to your account; you can withdraw it at any time. For the account, payment, advertising and crash-report services (Google) the transfer is necessary to perform the contract with you; the app cannot be provided without them.
+
+EU/EEA and UK (GDPR): transfers to the USA are protected by the providers’ data processing agreements, EU standard contractual clauses and, where held, EU-US Data Privacy Framework certification.
+
+Other countries: the transfer relies on your informed explicit consent and on the processing agreements in place with the providers. Additional rights under the law of your country are unaffected.
+
+For information about transfer safeguards: esarikaya@aursal.com</p></section>
+<section><h3>Retention and deletion</h3><p>Camera frames and images sent for editing: not stored on our server; provider periods are in the AI processing section.
+
+Photos you take and edit: on your phone only; deleting them is up to you.
+
+Account data, consent and age-eligibility records: for as long as your account exists.
+
+Usage counters: kept per allowance period; cleared when the account is deleted.
+
+Crash and freeze reports: Firebase Crashlytics starts removing them from live and backup systems after 90 days.
+
+Google Play payment records and the providers’ security or legally required records follow their own rules.
+
+You can delete your account from Profile → Delete account, or by writing to esarikaya@aursal.com from the account email; never send a password, and we may need to verify your identity. Deletion covers account records, consent history and associated cloud data; an interrupted request may need a retry or support follow-up. Photos on your phone remain yours. Deleting the account does not cancel a Google Play subscription.</p></section>
+<section><h3>Your rights</h3><p>Under KVKK art. 11 and GDPR art. 15-22 you may access, correct, delete, restrict, port and object; where processing relies on consent, you may withdraw it at any time.
+
+Most of it is one tap inside the app: on the Profile screen you can download your data (JSON), withdraw AI permission, turn analytics off or delete your account. To write to us: esarikaya@aursal.com — we answer within 30 days at the latest. If you are not satisfied, you may complain to the Turkish Personal Data Protection Board, or to your own supervisory authority in the EU/EEA or the UK.</p></section>
+<section><h3>Advertising</h3><p>The free plan may show Google AdMob ads. Google UMP gathers required advertising privacy choices before ads are requested when required. Depending on your region and choices, ads may be personalised, non-personalised, limited or unavailable. Refusing personalisation does not guarantee that every form of device-data processing stops. Reopen ad privacy options in Settings. Paid plans do not show ads.</p></section>
+<section><h3>Security</h3><p>Connections are encrypted (HTTPS). The AI providers’ keys are not in the app; they live on our server, and the app authenticates to it with its Firebase identity and Play Integrity/App Check attestation. Cloud records are readable only by the account owner under Firebase access rules. No system is completely secure; if a breach occurs we notify within the time the law requires.</p></section>
+<section><h3>Children&#x27;s Privacy</h3><p>This release is intended only for adults aged 18 and over and is not offered to children. Before account sign-in, a birth date is used on the device to calculate age eligibility; the birth date is neither stored nor sent to the server. The device retains the eligibility result and policy version. After sign-in, the eligibility declaration is stored with the account identifier, policy version, declaration source and server recording time. This is not independent age or identity verification. People blocked by the age check can request access, correction or deletion of existing account data at esarikaya@aursal.com. Buying a paid plan does not remove the age requirement. Report suspected improper processing of children’s data to the same address.</p></section>
+<section><h3>Changes</h3><p>If we update this policy we change the date and version above. Material changes are announced in the app; if a change needs new permission, we ask for it before the affected AI processing resumes. Continuing to use the camera alone is not consent to new AI processing.</p></section>
+</article>
+<article id="id" lang="id"><h2>Bahasa Indonesia</h2>
+<p>Terakhir diperbarui: 2026-09-12</p>
+<section><h3>Singkatnya</h3><p>Foto yang Anda ambil tetap di ponsel; tidak diunggah ke server kami dan tidak disimpan di sana. Saat Anda meminta pelatihan, penilaian, atau pengeditan AI, bingkai kamera atau foto yang Anda pilih dikirim ke server penyedia yang dipilih di luar negeri (Google, OpenAI, atau Anthropic); penyedia dapat menyimpannya hingga 30 hari demi keamanan. Kami tidak merekam audio. Aplikasi ini untuk usia 18 tahun ke atas. Anda dapat menarik izin AI kapan saja di Profil; pemrosesan AI baru berhenti.
+
+Kebijakan ini menjelaskan cara Camera Assistant memproses data pribadi Anda. Teks di aplikasi dan di aursal.com identik.</p></section>
+<section><h3>Siapa yang bertanggung jawab</h3><p>Pengendali data Anda adalah Ersal Sarıkaya. Kontak: esarikaya@aursal.com
+
+Hubungi alamat tersebut untuk hal apa pun dalam kebijakan ini, termasuk akses, koreksi, penghapusan, dan keberatan. Kami menjawab dalam 30 hari.
+
+VERBİS (registri pengendali Turki): aplikasi dijalankan oleh satu pengembang dan termasuk dalam pengecualian pendaftaran untuk pengendali kecil (ambang jumlah karyawan dan neraca; kegiatan utama bukan memproses data kategori khusus). Jika ambang terlampaui, kami mendaftar.
+
+Dasar: KVKK pasal 10 (Turki), GDPR pasal 13 (UE).</p></section>
+<section><h3>Data yang kami proses</h3><p>Akun: email, nama tampilan, foto profil opsional — untuk membuat akun dan masuk (Firebase). Foto profil yang Anda simpan disimpan di Firebase Storage.
+
+Pernyataan usia: sebelum masuk, tanggal lahir dihitung di perangkat; tidak disimpan dan tidak dikirim. Hanya hasil kelayakan dan versi kebijakan yang dicatat (lihat Privasi Anak).
+
+Foto: hasil jepretan, gambar impor, dan hasil edit disimpan di album perangkat; tidak diunggah ke kami. Bingkai kamera dan foto yang Anda pilih keluar dari perangkat hanya saat Anda meminta pelatihan, penilaian, atau pengeditan AI (lihat Pemrosesan AI).
+
+Penghitung penggunaan: jumlah jepretan, mode, sisa jatah — untuk menghitung jatah dan mencegah penyalahgunaan.
+
+ID perangkat dan iklan, versi aplikasi: keamanan, debugging, dan iklan pada paket gratis (Firebase, Google Play, AdMob).
+
+Laporan kerusakan dan macet: stack trace, model perangkat, OS, versi aplikasi, waktu kejadian — tanpa foto, bingkai, email, atau pesan (Firebase Crashlytics).
+
+Laporan konten: teks yang Anda tulis, ID akun, versi aplikasi, tanggal; foto tidak dilampirkan otomatis.
+
+Kami tidak merekam audio mikrofon: pelatih suara hanya berbicara, tidak mendengar; aplikasi tidak meminta izin mikrofon.
+
+Permintaan iklan dan pelaporan kerusakan otomatis dimulai setelah pernyataan usia yang memenuhi syarat; ini tidak menjamin SDK pihak ketiga di perangkat tidak memproses data teknis apa pun.</p></section>
+<section><h3>Cara kami menggunakan informasi Anda</h3><p>Kami menggunakan informasi Anda untuk: (a) menjalankan dan meningkatkan aplikasi; (b) mengelola langganan dan jatah; (c) menyediakan pelatihan, penilaian, dan pengeditan AI yang Anda minta; (d) analitik penggunaan dan kinerja opsional; (e) menyampaikan pembaruan penting.</p></section>
+<section><h3>Tujuan dan dasar hukum</h3><p>Pelatihan, penilaian, dan pengeditan foto AI: pelaksanaan kontrak + persetujuan tegas Anda untuk pemrosesan AI (kotak terpisah).
+
+Akun dan autentikasi: pelaksanaan kontrak.
+
+Langganan, kuota, pencegahan penyalahgunaan: kontrak dan kepentingan sah.
+
+Analitik: persetujuan (opsional) — tolak dan pengukuran tidak pernah dimulai.
+
+Pelaporan kerusakan dan macet: kepentingan sah (GDPR pasal 6(1)(f), KVKK pasal 5(2)(f)) — menjaga aplikasi tetap berjalan.
+
+Iklan: persetujuan untuk personalisasi (Google UMP), selain itu kepentingan sah.
+
+Membaca pemberitahuan privasi bukan persetujuan menyeluruh untuk semua pemrosesan. Dasar transfer ke luar negeri dijelaskan di bagian tersendiri.</p></section>
+<section><h3>Dengan siapa kami berbagi</h3><p>Kami tidak menjual data pribadi Anda. Kami hanya membagikannya dengan layanan yang menjalankan produk: Google/Gemini, OpenAI, atau Anthropic untuk pemrosesan AI yang Anda minta; Google Firebase untuk autentikasi, basis data, foto profil opsional, dan laporan kerusakan; Google Play untuk pembayaran dan langganan; Google AdMob untuk iklan pada paket gratis. Album perangkat bukan cadangan cloud. Memilih analisis atau pengeditan AI mengirim gambar ke penyedia terkait; foto profil yang disimpan berada terpisah di Firebase Storage. Ketentuan layanan dan kebijakan privasi penyedia berlaku untuk pemrosesan mereka sendiri.</p></section>
+<section><h3>Pemrosesan AI</h3><p>Pelatihan, penilaian, dan pengeditan gambar AI mengirim bingkai kamera atau gambar yang dipilih beserta instruksi ke Google (Gemini), OpenAI, atau Anthropic. Setiap permintaan — analisis, pengeditan, dan Live Gemini, OpenAI, dan Anthropic — melewati server Cloud Run kami (Belgia) lebih dulu. Server kami tidak menyimpan konten gambar; kami tidak memakai bingkai untuk melatih model kami sendiri. Penyedia dapat menyimpan masukan dan keluaran untuk waktu terbatas demi keamanan, pencegahan penyalahgunaan, dan kewajiban hukum: log pemantauan penyalahgunaan OpenAI API biasanya hingga 30 hari; masukan dan keluaran Anthropic API biasanya dihapus dalam 30 hari; Google Vertex AI (Gemini) tidak memakai data untuk melatih model dan dapat menyimpannya untuk waktu terbatas demi pemantauan penyalahgunaan. Kami tidak memiliki perjanjian khusus tanpa retensi. Wajah Anda mungkin tampak di bingkai.
+
+Kami tidak melakukan pengenalan wajah. Deteksi wajah di perangkat mengukur ada tidaknya wajah, sudut, dan ekspresi; tidak mengidentifikasi siapa pun, tidak dicocokkan dengan basis data mana pun, dan pengukurannya tidak disimpan. Karena itu pemrosesan ini bukan data biometrik menurut KVKK pasal 6 atau GDPR pasal 9.
+
+Izin AI bersifat opsional dan dapat ditarik di Profil. Penarikan menghentikan permintaan baru dan membatalkan pekerjaan yang berjalan bila memungkinkan; data yang sudah diterima penyedia tidak dapat ditarik kembali. Jika Anda menolak, kamera dan galeri tetap berfungsi; hanya fitur AI yang nonaktif.</p></section>
+<section><h3>Transfer data internasional</h3><p>Data Anda diproses di server di luar Turki:
+• Google Cloud Run (server kami) — Belgia, UE — meneruskan permintaan AI; gambar tidak disimpan.
+• Google Vertex AI (Gemini) — UE/AS — pelatihan dan pengeditan AI; log pemantauan penyalahgunaan terbatas.
+• OpenAI (melalui OpenAI Ireland Ltd.) — AS — pelatihan AI, pelatih langsung, dan pengeditan; hingga 30 hari.
+• Anthropic — AS — pelatihan AI; dihapus dalam 30 hari; bersertifikat EU-US Data Privacy Framework.
+• Google Firebase, Google Play, Google AdMob — AS/UE — akun, pembayaran, iklan, laporan kerusakan.
+
+Turki (KVKK pasal 9): Dewan belum mengeluarkan keputusan kecukupan untuk negara mana pun, dan kontrak standar Dewan belum ditandatangani dengan penyedia di atas (sudah diminta). Karena itu transfer untuk pemrosesan AI bertumpu pada persetujuan tegas yang Anda berikan lewat kotak “Pemrosesan Data AI” terpisah di layar persetujuan. Risiko yang perlu Anda ketahui sebelum menyetujui: hukum Turki dan kewenangan Dewan mungkin tidak berlaku langsung di negara tersebut; otoritas negara tersebut dapat meminta akses data menurut hukumnya sendiri; penyedia menyimpan data selama periode di atas; menarik persetujuan tidak mengembalikan data yang sudah terkirim. Persetujuan Anda dicatat dengan versi, tanggal, dan sumbernya, terkait akun Anda; Anda dapat menariknya kapan saja. Untuk layanan akun, pembayaran, iklan, dan laporan kerusakan (Google), transfer diperlukan untuk melaksanakan kontrak dengan Anda; aplikasi tidak dapat disediakan tanpanya.
+
+UE/EEA dan Inggris (GDPR): transfer ke AS dilindungi oleh perjanjian pemrosesan data penyedia, klausul kontrak standar UE, dan bila ada, sertifikasi EU-US Data Privacy Framework.
+
+Negara lain: transfer bertumpu pada persetujuan tegas Anda yang terinformasi dan perjanjian pemrosesan dengan penyedia. Hak tambahan menurut hukum negara Anda tetap berlaku.
+
+Informasi tentang jaminan transfer: esarikaya@aursal.com</p></section>
+<section><h3>Retensi dan penghapusan</h3><p>Bingkai kamera dan gambar yang dikirim untuk pengeditan: tidak disimpan di server kami; periode di penyedia ada di bagian Pemrosesan AI.
+
+Foto yang Anda ambil dan edit: hanya di ponsel Anda; menghapusnya terserah Anda.
+
+Data akun, catatan persetujuan, dan kelayakan usia: selama akun Anda ada.
+
+Penghitung penggunaan: disimpan per periode jatah; dibersihkan saat akun dihapus.
+
+Laporan kerusakan dan macet: Firebase Crashlytics mulai menghapusnya dari sistem aktif dan cadangan setelah 90 hari.
+
+Catatan pembayaran Google Play serta catatan keamanan atau yang diwajibkan hukum dari penyedia mengikuti aturan mereka sendiri.
+
+Anda dapat menghapus akun dari Profil → Hapus akun, atau dengan menulis ke esarikaya@aursal.com dari email akun; jangan pernah mengirim kata sandi, dan kami mungkin perlu memverifikasi identitas Anda. Penghapusan mencakup catatan akun, riwayat persetujuan, dan data cloud terkait; permintaan yang terputus mungkin perlu diulang atau ditindaklanjuti dukungan. Foto di ponsel tetap milik Anda. Menghapus akun tidak membatalkan langganan Google Play.</p></section>
+<section><h3>Hak Anda</h3><p>Berdasarkan KVKK pasal 11 dan GDPR pasal 15-22 Anda dapat mengakses, mengoreksi, menghapus, membatasi, memindahkan, dan mengajukan keberatan; bila pemrosesan bertumpu pada persetujuan, Anda dapat menariknya kapan saja.
+
+Sebagian besar cukup satu ketukan di aplikasi: di layar Profil Anda dapat mengunduh data (JSON), menarik izin AI, mematikan analitik, atau menghapus akun. Untuk menulis kepada kami: esarikaya@aursal.com — kami menjawab paling lambat 30 hari. Jika tidak puas, Anda dapat mengadu ke Dewan Perlindungan Data Pribadi Turki, atau ke otoritas pengawas Anda sendiri di UE/EEA atau Inggris.</p></section>
+<section><h3>Iklan</h3><p>Paket gratis dapat menampilkan iklan AdMob. Jika diwajibkan, Google UMP meminta pilihan privasi sebelum permintaan iklan. Menurut wilayah dan pilihan Anda, iklan dapat dipersonalisasi, tidak dipersonalisasi, dibatasi atau tidak tersedia. Menolak personalisasi tidak selalu menghentikan seluruh pemrosesan data perangkat. Buka kembali pilihan iklan di Pengaturan. Paket berbayar tidak menampilkan iklan.</p></section>
+<section><h3>Keamanan</h3><p>Koneksi dienkripsi (HTTPS). Kunci penyedia AI tidak ada di aplikasi; kunci berada di server kami, dan aplikasi terautentikasi dengan identitas Firebase serta atestasi Play Integrity/App Check. Catatan cloud hanya dapat dibaca pemilik akun berdasarkan aturan akses Firebase. Tidak ada sistem yang sepenuhnya aman; jika terjadi pelanggaran kami memberi tahu dalam waktu yang diwajibkan hukum.</p></section>
+<section><h3>Privasi Anak-anak</h3><p>Versi ini hanya ditujukan bagi orang dewasa berusia 18 tahun ke atas dan tidak ditawarkan kepada anak-anak. Sebelum masuk ke akun, tanggal lahir digunakan di perangkat untuk menghitung kelayakan usia; tanggal lahir tidak disimpan atau dikirim ke server. Perangkat menyimpan hasil kelayakan dan versi kebijakan. Setelah masuk, pernyataan kelayakan disimpan bersama pengenal akun, versi kebijakan, sumber pernyataan, dan waktu pencatatan server. Ini bukan verifikasi usia atau identitas secara independen. Orang yang diblokir oleh pemeriksaan usia dapat meminta akses, perbaikan, atau penghapusan data akun yang sudah ada melalui esarikaya@aursal.com. Membeli paket berbayar tidak menghapus persyaratan usia. Laporkan dugaan pemrosesan data anak yang tidak semestinya ke alamat yang sama.</p></section>
+<section><h3>Perubahan</h3><p>Jika kami memperbarui kebijakan ini, kami mengubah tanggal dan versi di atas. Perubahan penting diumumkan di aplikasi; jika perubahan memerlukan izin baru, kami memintanya sebelum pemrosesan AI terkait dilanjutkan. Terus memakai kamera saja bukan persetujuan untuk pemrosesan AI baru.</p></section>
+</article>
+<article id="vi" lang="vi"><h2>Tiếng Việt</h2>
+<p>Cập nhật lần cuối: 2026-09-12</p>
+<section><h3>Tóm tắt</h3><p>Ảnh bạn chụp ở lại trên điện thoại; không được tải lên máy chủ của chúng tôi và không được lưu ở đó. Khi bạn yêu cầu huấn luyện, đánh giá hoặc chỉnh sửa bằng AI, khung hình camera hoặc ảnh bạn chọn được gửi tới máy chủ ở nước ngoài của nhà cung cấp đã chọn (Google, OpenAI hoặc Anthropic); nhà cung cấp có thể lưu tới 30 ngày vì lý do an toàn. Chúng tôi không ghi âm. Ứng dụng dành cho người từ 18 tuổi. Bạn có thể rút quyền AI bất cứ lúc nào trong Hồ sơ; việc xử lý AI mới dừng lại.
+
+Chính sách này giải thích cách Camera Assistant xử lý dữ liệu cá nhân của bạn. Văn bản trong ứng dụng và trên aursal.com giống hệt nhau.</p></section>
+<section><h3>Ai chịu trách nhiệm</h3><p>Bên kiểm soát dữ liệu của bạn là Ersal Sarıkaya. Liên hệ: esarikaya@aursal.com
+
+Hãy viết tới địa chỉ đó về mọi vấn đề trong chính sách này, gồm truy cập, sửa, xóa và phản đối. Chúng tôi trả lời trong 30 ngày.
+
+VERBİS (sổ đăng ký bên kiểm soát của Thổ Nhĩ Kỳ): ứng dụng do một nhà phát triển duy nhất vận hành và thuộc diện miễn đăng ký dành cho bên kiểm soát nhỏ (ngưỡng số nhân viên và bảng cân đối; hoạt động chính không phải xử lý dữ liệu loại đặc biệt). Nếu vượt ngưỡng, chúng tôi sẽ đăng ký.
+
+Cơ sở: KVKK điều 10 (Thổ Nhĩ Kỳ), GDPR điều 13 (EU).</p></section>
+<section><h3>Dữ liệu chúng tôi xử lý</h3><p>Tài khoản: email, tên hiển thị, ảnh hồ sơ tùy chọn — để tạo tài khoản và đăng nhập (Firebase). Ảnh hồ sơ bạn lưu được cất trong Firebase Storage.
+
+Khai báo tuổi: trước khi đăng nhập, ngày sinh được tính trên thiết bị; không lưu và không gửi. Chỉ ghi lại kết quả đủ điều kiện và phiên bản chính sách (xem Quyền riêng tư của trẻ em).
+
+Ảnh: ảnh chụp, ảnh nhập và kết quả chỉnh sửa được lưu trong album của thiết bị; không tải lên cho chúng tôi. Khung hình camera và ảnh bạn chọn chỉ rời thiết bị khi bạn yêu cầu huấn luyện, đánh giá hoặc chỉnh sửa bằng AI (xem Xử lý AI).
+
+Bộ đếm sử dụng: số ảnh, chế độ, hạn mức còn lại — để tính hạn mức và ngăn lạm dụng.
+
+Mã thiết bị và mã quảng cáo, phiên bản ứng dụng: bảo mật, gỡ lỗi và quảng cáo ở gói miễn phí (Firebase, Google Play, AdMob).
+
+Báo cáo sập và treo: stack trace, mẫu thiết bị, hệ điều hành, phiên bản ứng dụng, thời điểm xảy ra — không có ảnh, khung hình, email hay tin nhắn (Firebase Crashlytics).
+
+Báo cáo nội dung: văn bản bạn viết, mã tài khoản, phiên bản ứng dụng, ngày; ảnh không tự động đính kèm.
+
+Chúng tôi không ghi âm micrô: huấn luyện viên giọng nói chỉ nói, không nghe; ứng dụng không xin quyền micrô.
+
+Yêu cầu quảng cáo và báo cáo sập tự động bắt đầu sau khai báo tuổi đủ điều kiện; điều này không bảo đảm SDK bên thứ ba trên thiết bị không xử lý dữ liệu kỹ thuật nào.</p></section>
+<section><h3>Chúng tôi dùng thông tin của bạn thế nào</h3><p>Chúng tôi dùng thông tin của bạn để: (a) vận hành và cải thiện ứng dụng; (b) quản lý đăng ký và hạn mức; (c) cung cấp huấn luyện, đánh giá và chỉnh sửa AI mà bạn yêu cầu; (d) phân tích sử dụng và hiệu năng tùy chọn; (e) thông báo cập nhật quan trọng.</p></section>
+<section><h3>Mục đích và cơ sở pháp lý</h3><p>Huấn luyện, đánh giá và chỉnh sửa ảnh bằng AI: thực hiện hợp đồng + sự đồng ý rõ ràng của bạn cho xử lý AI (ô riêng).
+
+Tài khoản và xác thực: thực hiện hợp đồng.
+
+Đăng ký, hạn mức, ngăn lạm dụng: hợp đồng và lợi ích chính đáng.
+
+Phân tích: đồng ý (tùy chọn) — từ chối thì việc đo lường không bao giờ bắt đầu.
+
+Báo cáo sập và treo: lợi ích chính đáng (GDPR điều 6(1)(f), KVKK điều 5(2)(f)) — giữ ứng dụng hoạt động.
+
+Quảng cáo: đồng ý cho cá nhân hóa (Google UMP), nếu không thì lợi ích chính đáng.
+
+Đọc thông báo quyền riêng tư không phải là đồng ý bao trùm mọi xử lý. Cơ sở của việc chuyển ra nước ngoài được giải thích trong mục riêng.</p></section>
+<section><h3>Chúng tôi chia sẻ với ai</h3><p>Chúng tôi không bán dữ liệu cá nhân của bạn. Chúng tôi chỉ chia sẻ với các dịch vụ vận hành sản phẩm: Google/Gemini, OpenAI hoặc Anthropic cho xử lý AI bạn yêu cầu; Google Firebase cho xác thực, cơ sở dữ liệu, ảnh hồ sơ tùy chọn và báo cáo sập; Google Play cho thanh toán và đăng ký; Google AdMob cho quảng cáo ở gói miễn phí. Album thiết bị không phải bản sao lưu đám mây. Chọn phân tích hoặc chỉnh sửa AI sẽ gửi ảnh tới nhà cung cấp liên quan; ảnh hồ sơ đã lưu được cất riêng trong Firebase Storage. Điều khoản dịch vụ và chính sách quyền riêng tư của nhà cung cấp áp dụng cho việc xử lý của họ.</p></section>
+<section><h3>Xử lý AI</h3><p>Huấn luyện, đánh giá và chỉnh sửa ảnh bằng AI gửi khung hình camera hoặc ảnh đã chọn cùng chỉ dẫn tới Google (Gemini), OpenAI hoặc Anthropic. Mọi yêu cầu — phân tích, chỉnh sửa và Live của Gemini, OpenAI và Anthropic — đi qua máy chủ Cloud Run của chúng tôi (Bỉ) trước. Máy chủ của chúng tôi không lưu nội dung ảnh; chúng tôi không dùng khung hình để huấn luyện mô hình riêng. Nhà cung cấp có thể lưu đầu vào và đầu ra trong thời gian giới hạn vì an toàn, ngăn lạm dụng và nghĩa vụ pháp lý: nhật ký giám sát lạm dụng của OpenAI API thường tới 30 ngày; đầu vào và đầu ra của Anthropic API thường bị xóa trong 30 ngày; Google Vertex AI (Gemini) không dùng dữ liệu để huấn luyện mô hình và có thể lưu trong thời gian giới hạn để giám sát lạm dụng. Chúng tôi không có thỏa thuận đặc biệt về không lưu trữ. Khuôn mặt của bạn có thể xuất hiện trong khung hình.
+
+Chúng tôi không nhận dạng khuôn mặt. Việc phát hiện khuôn mặt trên thiết bị đo xem có khuôn mặt hay không, góc và biểu cảm; không nhận dạng ai, không đối chiếu với cơ sở dữ liệu nào, và các phép đo không được lưu. Do đó việc xử lý này không phải dữ liệu sinh trắc học theo KVKK điều 6 hay GDPR điều 9.
+
+Quyền AI là tùy chọn và có thể rút lại trong Hồ sơ. Việc rút lại dừng các yêu cầu mới và hủy công việc đang chạy khi có thể; không thể thu hồi dữ liệu nhà cung cấp đã nhận. Nếu bạn từ chối, camera và thư viện vẫn hoạt động; chỉ các tính năng AI bị tắt.</p></section>
+<section><h3>Chuyển dữ liệu quốc tế</h3><p>Dữ liệu của bạn được xử lý trên máy chủ ngoài Thổ Nhĩ Kỳ:
+• Google Cloud Run (máy chủ của chúng tôi) — Bỉ, EU — chuyển tiếp yêu cầu AI; không lưu ảnh.
+• Google Vertex AI (Gemini) — EU/Hoa Kỳ — huấn luyện và chỉnh sửa AI; nhật ký giám sát lạm dụng giới hạn.
+• OpenAI (qua OpenAI Ireland Ltd.) — Hoa Kỳ — huấn luyện AI, huấn luyện viên trực tiếp và chỉnh sửa; tới 30 ngày.
+• Anthropic — Hoa Kỳ — huấn luyện AI; xóa trong 30 ngày; được chứng nhận EU-US Data Privacy Framework.
+• Google Firebase, Google Play, Google AdMob — Hoa Kỳ/EU — tài khoản, thanh toán, quảng cáo, báo cáo sập.
+
+Thổ Nhĩ Kỳ (KVKK điều 9): Ủy ban chưa ban hành quyết định đầy đủ cho quốc gia nào, và hợp đồng mẫu của Ủy ban chưa được ký với các nhà cung cấp trên (đã yêu cầu). Vì vậy việc chuyển để xử lý AI dựa trên sự đồng ý rõ ràng bạn đưa ra qua ô “Xử lý dữ liệu AI” riêng trên màn hình đồng ý. Rủi ro bạn cần biết trước khi đồng ý: luật Thổ Nhĩ Kỳ và thẩm quyền của Ủy ban có thể không áp dụng trực tiếp ở các nước đó; cơ quan của các nước đó có thể yêu cầu truy cập dữ liệu theo luật của họ; nhà cung cấp lưu dữ liệu trong các khoảng thời gian nêu trên; rút lại đồng ý không lấy lại dữ liệu đã gửi. Sự đồng ý của bạn được ghi lại cùng phiên bản, ngày và nguồn, gắn với tài khoản của bạn; bạn có thể rút lại bất cứ lúc nào. Với các dịch vụ tài khoản, thanh toán, quảng cáo và báo cáo sập (Google), việc chuyển là cần thiết để thực hiện hợp đồng với bạn; không có chúng thì không thể cung cấp ứng dụng.
+
+EU/EEA và Vương quốc Anh (GDPR): việc chuyển sang Hoa Kỳ được bảo vệ bởi thỏa thuận xử lý dữ liệu của nhà cung cấp, điều khoản hợp đồng mẫu của EU và, nếu có, chứng nhận EU-US Data Privacy Framework.
+
+Các nước khác: việc chuyển dựa trên sự đồng ý rõ ràng có hiểu biết của bạn và các thỏa thuận xử lý đã ký với nhà cung cấp. Các quyền bổ sung theo luật nước bạn không bị ảnh hưởng.
+
+Thông tin về biện pháp bảo đảm chuyển dữ liệu: esarikaya@aursal.com</p></section>
+<section><h3>Lưu giữ và xóa</h3><p>Khung hình camera và ảnh gửi để chỉnh sửa: không lưu trên máy chủ của chúng tôi; thời hạn ở nhà cung cấp nêu trong mục Xử lý AI.
+
+Ảnh bạn chụp và chỉnh sửa: chỉ trên điện thoại của bạn; xóa hay không tùy bạn.
+
+Dữ liệu tài khoản, hồ sơ đồng ý và đủ điều kiện tuổi: chừng nào tài khoản của bạn còn tồn tại.
+
+Bộ đếm sử dụng: lưu theo kỳ hạn mức; xóa khi xóa tài khoản.
+
+Báo cáo sập và treo: Firebase Crashlytics bắt đầu xóa khỏi hệ thống hoạt động và sao lưu sau 90 ngày.
+
+Hồ sơ thanh toán Google Play và hồ sơ bảo mật hoặc theo luật của nhà cung cấp tuân theo quy tắc riêng của họ.
+
+Bạn có thể xóa tài khoản từ Hồ sơ → Xóa tài khoản, hoặc viết tới esarikaya@aursal.com từ email của tài khoản; không bao giờ gửi mật khẩu, và chúng tôi có thể cần xác minh danh tính của bạn. Việc xóa bao gồm hồ sơ tài khoản, lịch sử đồng ý và dữ liệu đám mây liên quan; yêu cầu bị gián đoạn có thể cần thử lại hoặc hỗ trợ theo dõi. Ảnh trên điện thoại vẫn là của bạn. Xóa tài khoản không hủy đăng ký Google Play.</p></section>
+<section><h3>Quyền của bạn</h3><p>Theo KVKK điều 11 và GDPR điều 15-22 bạn có thể truy cập, sửa, xóa, hạn chế, chuyển và phản đối; khi việc xử lý dựa trên đồng ý, bạn có thể rút lại bất cứ lúc nào.
+
+Phần lớn chỉ cần một chạm trong ứng dụng: trên màn hình Hồ sơ bạn có thể tải dữ liệu (JSON), rút quyền AI, tắt phân tích hoặc xóa tài khoản. Để viết cho chúng tôi: esarikaya@aursal.com — chúng tôi trả lời chậm nhất trong 30 ngày. Nếu không hài lòng, bạn có thể khiếu nại tới Ủy ban Bảo vệ Dữ liệu Cá nhân Thổ Nhĩ Kỳ, hoặc cơ quan giám sát của bạn ở EU/EEA hoặc Vương quốc Anh.</p></section>
+<section><h3>Quảng cáo</h3><p>Gói miễn phí có thể hiển thị quảng cáo AdMob. Khi cần, Google UMP thu lựa chọn quyền riêng tư trước yêu cầu quảng cáo. Tùy khu vực và lựa chọn, quảng cáo có thể được cá nhân hóa, không cá nhân hóa, hạn chế hoặc không có. Từ chối cá nhân hóa không nhất thiết ngừng toàn bộ xử lý dữ liệu thiết bị. Mở lại lựa chọn quảng cáo trong Cài đặt. Gói trả phí không có quảng cáo.</p></section>
+<section><h3>Bảo mật</h3><p>Kết nối được mã hóa (HTTPS). Khóa của các nhà cung cấp AI không nằm trong ứng dụng; chúng nằm trên máy chủ của chúng tôi, và ứng dụng xác thực với máy chủ bằng danh tính Firebase cùng chứng thực Play Integrity/App Check. Hồ sơ đám mây chỉ chủ tài khoản đọc được theo quy tắc truy cập Firebase. Không hệ thống nào an toàn tuyệt đối; nếu xảy ra vi phạm, chúng tôi thông báo trong thời hạn luật yêu cầu.</p></section>
+<section><h3>Quyền Riêng Tư Trẻ Em</h3><p>Phiên bản này chỉ dành cho người lớn từ 18 tuổi trở lên và không được cung cấp cho trẻ em. Trước khi đăng nhập, ngày sinh được dùng trên thiết bị để tính điều kiện tuổi; ngày sinh không được lưu hoặc gửi đến máy chủ. Thiết bị lưu kết quả đủ điều kiện và phiên bản chính sách. Sau khi đăng nhập, khai báo đủ điều kiện được lưu cùng mã tài khoản, phiên bản chính sách, nguồn khai báo và thời gian máy chủ ghi nhận. Đây không phải xác minh tuổi hoặc danh tính độc lập. Người bị chặn bởi kiểm tra tuổi có thể yêu cầu truy cập, sửa hoặc xóa dữ liệu tài khoản hiện có qua esarikaya@aursal.com. Mua gói trả phí không loại bỏ điều kiện tuổi. Hãy báo cáo việc xử lý dữ liệu trẻ em không phù hợp qua cùng địa chỉ.</p></section>
+<section><h3>Thay đổi</h3><p>Nếu chúng tôi cập nhật chính sách này, chúng tôi thay đổi ngày và phiên bản ở trên. Thay đổi quan trọng được thông báo trong ứng dụng; nếu thay đổi cần quyền mới, chúng tôi xin trước khi việc xử lý AI liên quan tiếp tục. Chỉ tiếp tục dùng camera không phải là đồng ý cho xử lý AI mới.</p></section>
+</article>
+<article id="th" lang="th"><h2>ไทย</h2>
+<p>อัปเดตล่าสุด: 2026-09-12</p>
+<section><h3>โดยสรุป</h3><p>รูปที่คุณถ่ายอยู่ในโทรศัพท์ของคุณ ไม่ถูกอัปโหลดไปยังเซิร์ฟเวอร์ของเราและไม่ถูกเก็บไว้ที่นั่น เมื่อคุณขอการโค้ช การประเมิน หรือการแก้ไขด้วย AI เฟรมกล้องหรือรูปที่คุณเลือกจะถูกส่งไปยังเซิร์ฟเวอร์ในต่างประเทศของผู้ให้บริการที่เลือก (Google, OpenAI หรือ Anthropic) ผู้ให้บริการอาจเก็บไว้ไม่เกิน 30 วันเพื่อความปลอดภัย เราไม่บันทึกเสียง แอปนี้สำหรับผู้มีอายุ 18 ปีขึ้นไป คุณถอนสิทธิ์ AI ได้ทุกเมื่อในโปรไฟล์ การประมวลผล AI ใหม่จะหยุด
+
+นโยบายนี้อธิบายวิธีที่ Camera Assistant ประมวลผลข้อมูลส่วนบุคคลของคุณ ข้อความในแอปและใน aursal.com เหมือนกัน</p></section>
+<section><h3>ใครเป็นผู้รับผิดชอบ</h3><p>ผู้ควบคุมข้อมูลของคุณคือ Ersal Sarıkaya ติดต่อ: esarikaya@aursal.com
+
+ติดต่อที่อยู่นี้สำหรับทุกเรื่องในนโยบายนี้ รวมถึงการเข้าถึง แก้ไข ลบ และคัดค้าน เราตอบภายใน 30 วัน
+
+VERBİS (ทะเบียนผู้ควบคุมข้อมูลของตุรกี): แอปดำเนินการโดยนักพัฒนาคนเดียวและเข้าข่ายข้อยกเว้นการจดทะเบียนสำหรับผู้ควบคุมรายย่อย (เกณฑ์จำนวนพนักงานและงบดุล กิจกรรมหลักไม่ใช่การประมวลผลข้อมูลประเภทพิเศษ) หากเกินเกณฑ์ เราจะจดทะเบียน
+
+ฐาน: KVKK มาตรา 10 (ตุรกี), GDPR มาตรา 13 (สหภาพยุโรป)</p></section>
+<section><h3>ข้อมูลที่เราประมวลผล</h3><p>บัญชี: อีเมล ชื่อที่แสดง รูปโปรไฟล์ (ไม่บังคับ) — เพื่อสร้างบัญชีและลงชื่อเข้าใช้ (Firebase) รูปโปรไฟล์ที่คุณบันทึกเก็บใน Firebase Storage
+
+การแจ้งอายุ: ก่อนลงชื่อเข้าใช้ วันเกิดถูกคำนวณในเครื่อง ไม่ถูกเก็บและไม่ถูกส่ง บันทึกเฉพาะผลความเหมาะสมและเวอร์ชันนโยบาย (ดูความเป็นส่วนตัวของเด็ก)
+
+รูป: รูปที่ถ่าย รูปที่นำเข้า และผลการแก้ไขบันทึกในอัลบั้มของเครื่อง ไม่อัปโหลดมาที่เรา เฟรมกล้องและรูปที่คุณเลือกออกจากเครื่องเฉพาะเมื่อคุณขอการโค้ช การประเมิน หรือการแก้ไขด้วย AI (ดูการประมวลผลด้วย AI)
+
+ตัวนับการใช้งาน: จำนวนภาพ โหมด สิทธิ์คงเหลือ — เพื่อคำนวณสิทธิ์และป้องกันการใช้ในทางที่ผิด
+
+รหัสอุปกรณ์และรหัสโฆษณา เวอร์ชันแอป: ความปลอดภัย การแก้จุดบกพร่อง และโฆษณาในแพ็กเกจฟรี (Firebase, Google Play, AdMob)
+
+รายงานแอปหยุดทำงานและค้าง: stack trace รุ่นอุปกรณ์ ระบบปฏิบัติการ เวอร์ชันแอป เวลาที่เกิดเหตุ — ไม่มีรูป เฟรม อีเมล หรือข้อความ (Firebase Crashlytics)
+
+รายงานเนื้อหา: ข้อความที่คุณเขียน รหัสบัญชี เวอร์ชันแอป วันที่ ไม่แนบรูปอัตโนมัติ
+
+เราไม่บันทึกเสียงไมโครโฟน: โค้ชเสียงพูดเท่านั้น ไม่ฟัง และแอปไม่ขอสิทธิ์ไมโครโฟน
+
+คำขอโฆษณาและการรายงานแอปหยุดทำงานอัตโนมัติเริ่มหลังการแจ้งอายุที่ผ่านเกณฑ์ ซึ่งไม่รับประกันว่า SDK ของบุคคลที่สามในเครื่องจะไม่ประมวลผลข้อมูลทางเทคนิคใด ๆ</p></section>
+<section><h3>เราใช้ข้อมูลของคุณอย่างไร</h3><p>เราใช้ข้อมูลของคุณเพื่อ: (a) ให้บริการและปรับปรุงแอป (b) จัดการการสมัครสมาชิกและสิทธิ์ (c) ให้การโค้ช การประเมิน และการแก้ไขด้วย AI ที่คุณขอ (d) การวิเคราะห์การใช้งานและประสิทธิภาพ (ไม่บังคับ) (e) แจ้งการอัปเดตที่สำคัญ</p></section>
+<section><h3>วัตถุประสงค์และฐานทางกฎหมาย</h3><p>การโค้ช การประเมิน และการแก้ไขรูปด้วย AI: การปฏิบัติตามสัญญา + ความยินยอมโดยชัดแจ้งของคุณสำหรับการประมวลผล AI (ช่องแยก)
+
+บัญชีและการยืนยันตัวตน: การปฏิบัติตามสัญญา
+
+การสมัครสมาชิก โควตา การป้องกันการใช้ในทางที่ผิด: สัญญาและประโยชน์โดยชอบ
+
+การวิเคราะห์: ความยินยอม (ไม่บังคับ) — หากปฏิเสธ การวัดผลจะไม่เริ่มเลย
+
+การรายงานแอปหยุดทำงานและค้าง: ประโยชน์โดยชอบ (GDPR มาตรา 6(1)(f), KVKK มาตรา 5(2)(f)) — เพื่อให้แอปทำงานได้
+
+โฆษณา: ความยินยอมสำหรับการปรับให้เป็นส่วนตัว (Google UMP) มิฉะนั้นประโยชน์โดยชอบ
+
+การอ่านประกาศความเป็นส่วนตัวไม่ใช่ความยินยอมแบบเหมารวมต่อการประมวลผลทั้งหมด ฐานของการโอนข้อมูลไปต่างประเทศอธิบายในส่วนของตัวเอง</p></section>
+<section><h3>เราแบ่งปันกับใคร</h3><p>เราไม่ขายข้อมูลส่วนบุคคลของคุณ เราแบ่งปันเฉพาะกับบริการที่ทำให้ผลิตภัณฑ์ทำงาน: Google/Gemini, OpenAI หรือ Anthropic สำหรับการประมวลผล AI ที่คุณขอ Google Firebase สำหรับการยืนยันตัวตน ฐานข้อมูล รูปโปรไฟล์ (ไม่บังคับ) และรายงานแอปหยุดทำงาน Google Play สำหรับการชำระเงินและการสมัครสมาชิก Google AdMob สำหรับโฆษณาในแพ็กเกจฟรี อัลบั้มของเครื่องไม่ใช่การสำรองข้อมูลบนคลาวด์ การเลือกวิเคราะห์หรือแก้ไขด้วย AI จะส่งรูปไปยังผู้ให้บริการที่เกี่ยวข้อง รูปโปรไฟล์ที่บันทึกเก็บแยกใน Firebase Storage ข้อกำหนดบริการและนโยบายความเป็นส่วนตัวของผู้ให้บริการใช้กับการประมวลผลของพวกเขาเอง</p></section>
+<section><h3>การประมวลผลด้วย AI</h3><p>การโค้ช การประเมิน และการแก้ไขรูปด้วย AI ส่งเฟรมกล้องหรือรูปที่เลือกพร้อมคำสั่งไปยัง Google (Gemini), OpenAI หรือ Anthropic ทุกคำขอ — การวิเคราะห์ การแก้ไข และ Live ของ Gemini, OpenAI และ Anthropic — ผ่านเซิร์ฟเวอร์ Cloud Run ของเรา (เบลเยียม) ก่อน เซิร์ฟเวอร์ของเราไม่เก็บเนื้อหารูป เราไม่ใช้เฟรมเพื่อฝึกโมเดลของเราเอง ผู้ให้บริการอาจเก็บข้อมูลเข้าและผลลัพธ์ไว้ระยะเวลาจำกัดเพื่อความปลอดภัย การป้องกันการใช้ในทางที่ผิด และภาระผูกพันทางกฎหมาย: บันทึกตรวจสอบการใช้ในทางที่ผิดของ OpenAI API โดยทั่วไปไม่เกิน 30 วัน ข้อมูลเข้าและผลลัพธ์ของ Anthropic API โดยทั่วไปลบภายใน 30 วัน Google Vertex AI (Gemini) ไม่ใช้ข้อมูลเพื่อฝึกโมเดลและอาจเก็บไว้ระยะเวลาจำกัดเพื่อตรวจสอบการใช้ในทางที่ผิด เราไม่มีข้อตกลงพิเศษเรื่องไม่เก็บข้อมูล ใบหน้าของคุณอาจปรากฏในเฟรม
+
+เราไม่ทำการจดจำใบหน้า การตรวจจับใบหน้าในเครื่องวัดว่ามีใบหน้าหรือไม่ มุม และสีหน้า ไม่ระบุตัวตนของใคร ไม่จับคู่กับฐานข้อมูลใด และไม่เก็บค่าที่วัด ด้วยเหตุนี้การประมวลผลนี้จึงไม่ใช่ข้อมูลชีวมิติตาม KVKK มาตรา 6 หรือ GDPR มาตรา 9
+
+สิทธิ์ AI เป็นทางเลือกและถอนได้ในโปรไฟล์ การถอนหยุดคำขอใหม่และยกเลิกงานที่กำลังทำเมื่อทำได้ แต่เรียกคืนข้อมูลที่ผู้ให้บริการรับแล้วไม่ได้ หากคุณปฏิเสธ กล้องและแกลเลอรียังทำงานได้ เฉพาะฟีเจอร์ AI ที่ปิด</p></section>
+<section><h3>การโอนข้อมูลระหว่างประเทศ</h3><p>ข้อมูลของคุณถูกประมวลผลบนเซิร์ฟเวอร์นอกตุรกี:
+• Google Cloud Run (เซิร์ฟเวอร์ของเรา) — เบลเยียม สหภาพยุโรป — ส่งต่อคำขอ AI ไม่เก็บรูป
+• Google Vertex AI (Gemini) — สหภาพยุโรป/สหรัฐฯ — การโค้ชและการแก้ไขด้วย AI บันทึกตรวจสอบการใช้ในทางที่ผิดแบบจำกัด
+• OpenAI (ผ่าน OpenAI Ireland Ltd.) — สหรัฐฯ — การโค้ช AI โค้ชสด และการแก้ไข ไม่เกิน 30 วัน
+• Anthropic — สหรัฐฯ — การโค้ช AI ลบภายใน 30 วัน ได้รับการรับรอง EU-US Data Privacy Framework
+• Google Firebase, Google Play, Google AdMob — สหรัฐฯ/สหภาพยุโรป — บัญชี การชำระเงิน โฆษณา รายงานแอปหยุดทำงาน
+
+ตุรกี (KVKK มาตรา 9): คณะกรรมการยังไม่ออกคำวินิจฉัยความเพียงพอสำหรับประเทศใด และยังไม่ได้ลงนามสัญญามาตรฐานของคณะกรรมการกับผู้ให้บริการข้างต้น (ได้ร้องขอแล้ว) การโอนเพื่อการประมวลผล AI จึงอาศัยความยินยอมโดยชัดแจ้งที่คุณให้ผ่านช่อง “การประมวลผลข้อมูล AI” แยกต่างหากในหน้าจอความยินยอม ความเสี่ยงที่ควรทราบก่อนยินยอม: กฎหมายตุรกีและอำนาจของคณะกรรมการอาจไม่มีผลโดยตรงในประเทศเหล่านั้น หน่วยงานของประเทศเหล่านั้นอาจขอเข้าถึงข้อมูลตามกฎหมายของตน ผู้ให้บริการเก็บข้อมูลตามระยะเวลาข้างต้น การถอนความยินยอมไม่นำข้อมูลที่ส่งไปแล้วกลับมา ความยินยอมของคุณถูกบันทึกพร้อมเวอร์ชัน วันที่ และแหล่งที่มา ผูกกับบัญชีของคุณ คุณถอนได้ทุกเมื่อ สำหรับบริการบัญชี การชำระเงิน โฆษณา และรายงานแอปหยุดทำงาน (Google) การโอนจำเป็นต่อการปฏิบัติตามสัญญากับคุณ แอปไม่สามารถให้บริการได้หากไม่มีบริการเหล่านี้
+
+สหภาพยุโรป/EEA และสหราชอาณาจักร (GDPR): การโอนไปสหรัฐฯ ได้รับความคุ้มครองโดยข้อตกลงการประมวลผลข้อมูลของผู้ให้บริการ ข้อสัญญามาตรฐานของสหภาพยุโรป และการรับรอง EU-US Data Privacy Framework หากมี
+
+ประเทศอื่น: การโอนอาศัยความยินยอมโดยชัดแจ้งที่ได้รับข้อมูลของคุณและข้อตกลงการประมวลผลกับผู้ให้บริการ สิทธิเพิ่มเติมตามกฎหมายของประเทศคุณไม่ได้รับผลกระทบ
+
+สอบถามเรื่องหลักประกันการโอน: esarikaya@aursal.com</p></section>
+<section><h3>การเก็บรักษาและการลบ</h3><p>เฟรมกล้องและรูปที่ส่งเพื่อแก้ไข: ไม่เก็บบนเซิร์ฟเวอร์ของเรา ระยะเวลาที่ผู้ให้บริการอยู่ในส่วนการประมวลผลด้วย AI
+
+รูปที่คุณถ่ายและแก้ไข: อยู่ในโทรศัพท์ของคุณเท่านั้น การลบขึ้นอยู่กับคุณ
+
+ข้อมูลบัญชี บันทึกความยินยอม และความเหมาะสมด้านอายุ: ตราบที่บัญชีของคุณยังอยู่
+
+ตัวนับการใช้งาน: เก็บตามรอบสิทธิ์ ล้างเมื่อลบบัญชี
+
+รายงานแอปหยุดทำงานและค้าง: Firebase Crashlytics เริ่มลบออกจากระบบใช้งานและระบบสำรองหลัง 90 วัน
+
+บันทึกการชำระเงินของ Google Play และบันทึกด้านความปลอดภัยหรือที่กฎหมายกำหนดของผู้ให้บริการเป็นไปตามกฎของแต่ละราย
+
+คุณลบบัญชีได้จากโปรไฟล์ → ลบบัญชี หรือเขียนถึง esarikaya@aursal.com จากอีเมลของบัญชี อย่าส่งรหัสผ่าน และเราอาจต้องยืนยันตัวตนของคุณ การลบครอบคลุมบันทึกบัญชี ประวัติความยินยอม และข้อมูลคลาวด์ที่เกี่ยวข้อง คำขอที่ถูกขัดจังหวะอาจต้องลองใหม่หรือติดตามผ่านฝ่ายสนับสนุน รูปในโทรศัพท์ยังเป็นของคุณ การลบบัญชีไม่ยกเลิกการสมัครสมาชิก Google Play</p></section>
+<section><h3>สิทธิของคุณ</h3><p>ตาม KVKK มาตรา 11 และ GDPR มาตรา 15-22 คุณสามารถเข้าถึง แก้ไข ลบ จำกัด โอนย้าย และคัดค้าน หากการประมวลผลอาศัยความยินยอม คุณถอนได้ทุกเมื่อ
+
+ส่วนใหญ่ทำได้ในแอปด้วยการแตะครั้งเดียว: ในหน้าจอโปรไฟล์คุณดาวน์โหลดข้อมูล (JSON) ถอนสิทธิ์ AI ปิดการวิเคราะห์ หรือลบบัญชีได้ ติดต่อเรา: esarikaya@aursal.com — เราตอบภายใน 30 วันเป็นอย่างช้า หากไม่พอใจ คุณร้องเรียนต่อคณะกรรมการคุ้มครองข้อมูลส่วนบุคคลของตุรกี หรือหน่วยงานกำกับดูแลของคุณเองในสหภาพยุโรป/EEA หรือสหราชอาณาจักรได้</p></section>
+<section><h3>โฆษณา</h3><p>แพ็กเกจฟรีอาจแสดงโฆษณา AdMob หากจำเป็น Google UMP จะขอตัวเลือกความเป็นส่วนตัวก่อนส่งคำขอโฆษณา ตามภูมิภาคและตัวเลือก โฆษณาอาจปรับเฉพาะบุคคล ไม่ปรับเฉพาะบุคคล จำกัด หรือไม่แสดง การปฏิเสธการปรับเฉพาะบุคคลไม่ได้หยุดการประมวลผลข้อมูลอุปกรณ์ทุกประเภท เปิดตัวเลือกอีกครั้งในตั้งค่า แพ็กเกจแบบชำระเงินไม่มีโฆษณา</p></section>
+<section><h3>ความปลอดภัย</h3><p>การเชื่อมต่อถูกเข้ารหัส (HTTPS) คีย์ของผู้ให้บริการ AI ไม่อยู่ในแอป แต่อยู่บนเซิร์ฟเวอร์ของเรา และแอปยืนยันตัวตนกับเซิร์ฟเวอร์ด้วยข้อมูลประจำตัว Firebase และการรับรอง Play Integrity/App Check บันทึกบนคลาวด์อ่านได้เฉพาะเจ้าของบัญชีตามกฎการเข้าถึงของ Firebase ไม่มีระบบใดปลอดภัยสมบูรณ์ หากเกิดการละเมิด เราจะแจ้งภายในเวลาที่กฎหมายกำหนด</p></section>
+<section><h3>ความเป็นส่วนตัวของเด็ก</h3><p>รุ่นนี้มีไว้สำหรับผู้ใหญ่ที่มีอายุ 18 ปีขึ้นไปเท่านั้นและไม่ได้ให้บริการแก่เด็ก ก่อนเข้าสู่ระบบ วันเกิดจะใช้คำนวณคุณสมบัติด้านอายุบนอุปกรณ์ โดยไม่บันทึกหรือส่งวันเกิดไปยังเซิร์ฟเวอร์ อุปกรณ์เก็บผลคุณสมบัติและเวอร์ชันนโยบาย หลังเข้าสู่ระบบ ระบบเก็บคำแจ้งคุณสมบัติพร้อมรหัสบัญชี เวอร์ชันนโยบาย แหล่งที่มาของคำแจ้ง และเวลาที่เซิร์ฟเวอร์บันทึก วิธีนี้ไม่ใช่การตรวจสอบอายุหรือตัวตนโดยอิสระ ผู้ที่ถูกปิดกั้นโดยการตรวจอายุสามารถขอเข้าถึง แก้ไข หรือลบข้อมูลบัญชีเดิมได้ที่ esarikaya@aursal.com การซื้อแผนชำระเงินไม่ยกเว้นข้อกำหนดด้านอายุ หากสงสัยว่ามีการประมวลผลข้อมูลเด็กอย่างไม่เหมาะสม โปรดแจ้งที่อีเมลเดียวกัน</p></section>
+<section><h3>การเปลี่ยนแปลง</h3><p>หากเราอัปเดตนโยบายนี้ เราจะเปลี่ยนวันที่และเวอร์ชันด้านบน การเปลี่ยนแปลงสำคัญประกาศในแอป หากการเปลี่ยนแปลงต้องการสิทธิ์ใหม่ เราจะขอก่อนที่การประมวลผล AI ที่เกี่ยวข้องจะดำเนินต่อ การใช้กล้องต่อไปเพียงอย่างเดียวไม่ถือเป็นความยินยอมต่อการประมวลผล AI ใหม่</p></section>
+</article>
+</div></body></html>
