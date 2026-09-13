@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kamera Asistanı: Foto Koçu · AURSAL</title>
+<meta name="description" content="Kamera Asistanı — yapay zeka sahneyi okur, çekim fikrini verir, doğru anda deklanşöre basar. Android için fotoğraf koçu.">
+<link rel="icon" href="../assets/icon-cameraassistant.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .shots{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+  .shots img{width:100%;height:auto;border-radius:14px;border:1px solid #e2dfd5;background:#fffefb}
+  .steps{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .hero{display:flex;gap:28px;align-items:center}
+  .hero .icon.big{width:96px;height:96px;border-radius:24px;background-size:cover;flex:none}
+  .hero h1{font-size:34px;font-weight:600;line-height:1.1;margin-bottom:8px}
+  .hero .cta{margin-top:14px}
+  @media (max-width:760px){.shots{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.hero{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <a class="brand" href="../index.html"><img src="../assets/aursal-logo.png" alt="AURSAL"></a>
+    <nav>
+      <a href="../index.html"><span class="i18n" data-en="Home">Ana Sayfa</span></a>
+      <a href="../hakkimizda.html"><span class="i18n" data-en="About">Hakkımızda</span></a>
+      <a href="../iletisim.html"><span class="i18n" data-en="Contact">İletişim</span></a>
+      <a href="../yasal.html"><span class="i18n" data-en="Legal">Yasal</span></a>
+      <button id="lang" type="button">EN / TR</button>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="wrap narrow">
+    <code class="path">aursal.com/kamera-asistani</code>
+    <div class="hero">
+      <span class="icon big" style="background-image:url(../assets/icon-cameraassistant.webp)"></span>
+      <div>
+        <h1><span class="i18n" data-en="Camera Assistant: Photo Coach">Kamera Asistanı: Foto Koçu</span></h1>
+        <p class="lead"><span class="i18n" data-en="AI reads the scene, gives you a shot idea, and fires the shutter at the right moment.">Yapay zeka sahneyi okur, çekim fikrini verir, doğru anda deklanşöre basar.</span></p>
+        <div class="cta">
+          <a class="btn dark" href="https://play.google.com/store/apps/details?id=com.esarikaya.cameraassistant" target="_blank" rel="noopener"><svg width="15" height="16" viewBox="0 0 512 512" aria-hidden="true"><path fill="#e5a13b" d="M47 21c-9 5-15 15-15 29v412c0 14 6 24 15 29l232-235z"/><path fill="#f6f4ee" d="M279 256 47 21c3-2 7-3 11-3 8 0 17 3 27 9l268 152z"/><path fill="#c8862a" d="M279 256 353 179l90 51c31 18 31 36 0 54l-90 51z"/><path fill="#8fb8c4" d="M279 256 85 485c-10 6-19 9-27 9-4 0-8-1-11-3z"/></svg><span class="i18n" data-en="Google Play">Google Play</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="shots">
+      <img src="img/1-gerisayim.webp" alt="" loading="lazy">
+      <img src="img/2-anasayfa.webp" alt="" loading="lazy">
+      <img src="img/3-kritik.webp" alt="" loading="lazy">
+      <img src="img/4-duzenleme.webp" alt="" loading="lazy">
+    </div>
+
+    <div class="shead"><h2><span class="i18n" data-en="How it works">Nasıl çalışır</span></h2><i></i></div>
+    <div class="steps">
+      <div class="tile"><h3><span class="i18n" data-en="1. It reads">1. Okur</span></h3><p><span class="i18n" data-en="The AI looks at what the camera sees and gives you an idea of what to shoot — based on where you are, the light you have and what is in front of you.">Yapay zeka kameranın gördüğünü değerlendirir ve ne çekeceğinizi anlatan bir fikir verir: bulunduğunuz yere, ışığa ve karedeki şeylere göre.</span></p></div>
+      <div class="tile"><h3><span class="i18n" data-en="2. It measures">2. Ölçer</span></h3><p><span class="i18n" data-en="Light direction, framing tilt, face position and how steady your hand is are measured on the phone itself — instant, no connection needed. You watch the checks turn green.">Işık yönü, kadraj eğimi, yüz konumu ve elinizin sabitliği telefonun kendisinde ölçülür — anlık, internet gerektirmeden. Hangi ölçümün tuttuğunu ekranda görürsünüz.</span></p></div>
+      <div class="tile"><h3><span class="i18n" data-en="3. It shoots">3. Çeker</span></h3><p><span class="i18n" data-en="When every measurement is met, a countdown starts and the photo is taken by itself. Switch auto-capture off and use the shutter yourself whenever you like.">Ölçümler tamamlandığında geri sayım başlar ve fotoğraf kendiliğinden çekilir. Otomatik çekimi kapatıp deklanşörü kendiniz de kullanabilirsiniz.</span></p></div>
+      <div class="tile"><h3><span class="i18n" data-en="4. It reviews">4. Değerlendirir</span></h3><p><span class="i18n" data-en="A short critique after the shot: whether the frame worked, and what is worth trying next time. Then edit the result with a tap.">Çekimden sonra kısa bir kritik: kare tuttu mu, bir dahakine ne denenebilir. Sonucu tek dokunuşla düzenleyin.</span></p></div>
+    </div>
+
+    <div class="chips"><span><span class="i18n" data-en="Portrait · Selfie · Food · Landscape · Night · Street">Portre · Selfie · Yemek · Manzara · Gece · Sokak</span></span><span><span class="i18n" data-en="Voice coach">Sesli koç</span></span><span><span class="i18n" data-en="Photo editing">Fotoğraf düzenleme</span></span><span><span class="i18n" data-en="5 languages">5 dil</span></span><span><span class="i18n" data-en="Ages 18+">18 yaş ve üzeri</span></span></div>
+
+    <div class="tile note">
+      <h3><span class="i18n" data-en="Free to start">Ücretsiz başlayın</span></h3>
+      <p><span class="i18n" data-en="7 days free with a daily allowance; then Plus, Pro or Studio monthly plans sold in coaching minutes, not model names. Your photos stay on your phone; frames go to the AI only when you ask, and you can withdraw that permission at any time.">7 gün ücretsiz, günlük hakla; sonra dakika olarak satılan Plus, Pro veya Studio aylık paketleri. Fotoğraflarınız telefonunuzda kalır; kareler yalnız siz istediğinizde yapay zekaya gider, izni istediğiniz an geri çekersiniz.</span></p>
+    </div>
+
+    <div class="lgroup">
+      <a class="doc" href="gizlilik-politikasi.html"><span><strong><span class="i18n" data-en="Privacy policy">Gizlilik politikası</span></strong><code>aursal.com/kamera-asistani/gizlilik-politikasi</code></span><span class="go"><span class="i18n" data-en="open page ↗">sayfayı aç ↗</span></span></a>
+      <a class="doc" href="kullanici-sozlesmesi.html"><span><strong><span class="i18n" data-en="Terms of use">Kullanıcı sözleşmesi</span></strong><code>aursal.com/kamera-asistani/kullanici-sozlesmesi</code></span><span class="go"><span class="i18n" data-en="open page ↗">sayfayı aç ↗</span></span></a>
+      <a class="doc" href="mailto:esarikaya@aursal.com"><span><strong><span class="i18n" data-en="Support">Destek</span></strong><code>esarikaya@aursal.com</code></span><span class="go"><span class="i18n" data-en="write ↗">yazın ↗</span></span></a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap fcols">
+    <div>
+      <span class="wordmark">AU<em>RSAL</em></span>
+      <p><span class="i18n" data-en="An independent team building Android apps.">Android uygulamaları geliştiren bağımsız bir ekip.</span></p>
+      <a class="mail" href="mailto:esarikaya@aursal.com">esarikaya@aursal.com</a>
+    </div>
+    <div>
+      <h4><span class="i18n" data-en="Apps">Uygulamalar</span></h4>
+      <a href="https://screentranslate.com/">Screen Translate</a>
+      <a href="https://phonemd.net/">PhoneMD</a>
+      <a href="index.html">Kamera Asistanı</a>
+    </div>
+    <div>
+      <h4><span class="i18n" data-en="Legal">Yasal</span></h4>
+      <a href="../yasal.html"><span class="i18n" data-en="Privacy policy">Gizlilik politikası</span></a>
+      <a href="../yasal.html"><span class="i18n" data-en="Terms of use">Kullanıcı sözleşmesi</span></a>
+    </div>
+    <div>
+      <h4><span class="i18n" data-en="Company">Kurumsal</span></h4>
+      <a href="../hakkimizda.html"><span class="i18n" data-en="About">Hakkımızda</span></a>
+      <a href="../iletisim.html"><span class="i18n" data-en="Contact">İletişim</span></a>
+    </div>
+  </div>
+  <div class="wrap fbot">
+    <span>© 2026 AURSAL · <span class="i18n" data-en="All rights reserved.">Tüm hakları saklıdır.</span></span>
+    <code>aursal.com/app-ads.txt</code>
+  </div>
+</footer>
+<script src="../site.js"></script>
+</body>
+</html>
