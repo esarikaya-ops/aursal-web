@@ -15,6 +15,13 @@
 
   var saved = 'tr';
   try { saved = localStorage.getItem(KEY) || 'tr'; } catch (e) {}
+  // ?lang=en|tr wins over the saved choice: the app links to the guide with the
+  // phone's language, and most of its users are not Turkish.
+  var asked = (location.search.match(/[?&]lang=(en|tr)(&|$)/) || [])[1];
+  if (asked) {
+    saved = asked;
+    try { localStorage.setItem(KEY, asked); } catch (e) {}
+  }
   if (saved === 'en') apply('en');
 
   if (btn) btn.addEventListener('click', function () {
