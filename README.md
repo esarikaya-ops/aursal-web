@@ -86,7 +86,7 @@ Adresleri kesindir ve Play Console'a bu haliyle verilebilir; bağlantılar
 | Uygulama | Sürüm | Paket adı | Durum |
 |---|---|---|---|
 | Screen Translate | v4.1 | com.esarikaya.screentranslate | Play'de yayında |
-| PhoneMD | v6.0.2 (16) | com.esarikaya.phonemd | Play'de yayında |
+| PhoneMD | v6.1.0 (17) | com.esarikaya.phonemd | Play'de yayında |
 | Hane | — | — | Geliştirmede |
 | Kamera Asistanı | — | — | Geliştirmede |
 
