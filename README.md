@@ -84,9 +84,9 @@ taşımıyorlar.
 
 | Uygulama | Sürüm | Paket adı | Durum |
 |---|---|---|---|
-| Screen Translate | v4.1 | com.esarikaya.screentranslate | Play'de yayında |
+| Screen Translate | v4.3.0 | com.esarikaya.screentranslate | Play'de yayında |
 | PhoneMD | v6.1.0 (17) | com.esarikaya.phonemd | Play'de yayında |
-| Kamera Asistanı | v1.0.7 | com.esarikaya.cameraassistant | Play'de yayında |
+| Kamera Asistanı | v1.0.10 | com.esarikaya.cameraassistant | Play'de yayında |
 
 Minimum Android: 7.0 (API 24) · Kotlin + Jetpack Compose
 AdMob yayıncı: pub-4203599298513432
