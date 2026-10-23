@@ -5,7 +5,7 @@ AURSAL yayıncı sitesi. Statik HTML, derleme adımı yok, GitHub Pages ile yay�
 ## Klasör yapısı
 
     aursal/
-    ├── index.html              Ana sayfa (yayındaki + geliştirmedeki uygulamalar)
+    ├── index.html              Ana sayfa (yayındaki uygulamalar)
     ├── hakkimizda.html         AURSAL nedir, yayıncı bilgileri
     ├── iletisim.html           Tek iletişim adresi + uygulamaların mevcut adresleri
     ├── yasal.html              Uygulama başına yasal metin dizini (link listesi)
@@ -53,8 +53,8 @@ da her sayfası `canonical` + `meta refresh` ikilisine indirilir.
 ### app-ads.txt neyi doğrular
 
 Kökteki dosya, Play kaydında **geliştirici web sitesi olarak bu alan adını
-gösteren** uygulamaları doğrular — bugün Kamera Asistanı ve Hane. Yayındaki iki
-uygulama kendi alan adlarını gösteriyor, dolayısıyla kendi dosyalarını
+gösteren** uygulamaları doğrular — bugün Kamera Asistanı. Screen Translate ve
+PhoneMD kendi alan adlarını gösteriyor, dolayısıyla kendi dosyalarını
 koruyorlar. Üç ayrı `app-ads.txt` var ve bu bilinçlidir.
 
 ## Kamera Asistanı yasal metinleri — üretilir
@@ -69,16 +69,15 @@ Metin değişecekse `cameraassistant/docs/legal/*.html` içinde değişir, betik
 yeniden çalıştırılır. Elle kopyalanmış üçüncü bir sürüm tutulmaz — `yasal.html`
 sayfasının kendi yazdığı kural budur.
 
-⚠️ Sayfalar şu an **hiçbir yerden bağlantılı değil** ve `noindex` taşıyor.
-Adresleri kesindir ve Play Console'a bu haliyle verilebilir; bağlantılar
-(`yasal.html` bloğu + ana sayfadaki kart) uygulama Play'e yüklenirken açılacak.
+Sayfalar `yasal.html` bloğundan ve ana sayfadaki karttan bağlantılı; `noindex`
+taşımıyorlar.
 
 ## Yeni uygulama eklerken
 
-1. `index.html` içindeki "Geliştirmede" bölümünden kartı al, "Play Store'da yayında"
-   bölümüne taşı; Play bağlantısını ve sürüm satırını yaz.
+1. `index.html` içindeki "Play Store'da yayında" bölümüne mevcut bir kartı örnek
+   alarak yeni kart ekle; Play bağlantısını ve sürüm satırını yaz.
 2. `yasal.html` içine o uygulamanın `.lgroup` bloğunu ekle.
-3. Uygulamanın sitesini `hane/` veya `kamera-asistani/` dizinine koy.
+3. Uygulamanın sitesini kendi dizinine koy (ör. `kamera-asistani/`).
 4. Uygulama ikonunu `assets/` içine at (192×192 veya üstü).
 
 ## Uygulama bilgileri
@@ -87,10 +86,9 @@ Adresleri kesindir ve Play Console'a bu haliyle verilebilir; bağlantılar
 |---|---|---|---|
 | Screen Translate | v4.1 | com.esarikaya.screentranslate | Play'de yayında |
 | PhoneMD | v6.1.0 (17) | com.esarikaya.phonemd | Play'de yayında |
-| Hane | — | — | Geliştirmede |
-| Kamera Asistanı | — | — | Geliştirmede |
+| Kamera Asistanı | v1.0.7 | com.esarikaya.cameraassistant | Play'de yayında |
 
-Minimum Android: 6.0 (API 23) · Kotlin + Jetpack Compose
+Minimum Android: 7.0 (API 24) · Kotlin + Jetpack Compose
 AdMob yayıncı: pub-4203599298513432
 
 ## İletişim

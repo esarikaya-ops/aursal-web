@@ -16,7 +16,7 @@ date: 2026-08-16T09:41:41Z
 | Aursal Site.dc.html → Adres yapısı | her iki deponun sayfa listesi + app-ads.txt |
 | Aursal Site.dc.html → Yasal metinler | screentranslate-web: gizlilik-politikasi.html, kullanici-sozlesmesi.html, yardim-sss.html, nasil-kullanilir.html · esarikaya-ops.github.io: privacy.html, terms.html, contact.html |
 | Aursal Site.dc.html → İletişim | esarikaya-ops.github.io: contact.html (mevcut e-posta adresleri) |
-| Aursal Site.dc.html → Hane, Kamera Asistanı | yerel klasör: Hane/…/DESIGN-tasarim-brief.md, cameraassistant/README.md, docs/HANDOFF.md §25 |
+| Aursal Site.dc.html → Kamera Asistanı | yerel klasör: cameraassistant/README.md, docs/HANDOFF.md §25 |
 
 ## Notlar
 - İkinci depo: esarikaya-ops/esarikaya-ops.github.io (branch main) — phonemd.net.
